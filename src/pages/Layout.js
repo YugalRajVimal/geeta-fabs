@@ -6,7 +6,7 @@ const Layout = () => {
   return (
     <>
       <div className="relative">
-        <LandingPageBackground />
+        {/* <LandingPageBackground /> */}
         <div className="h-screen relative w-full z-[30]">
           <Outlet />
         </div>
