@@ -55,8 +55,8 @@ const LandingPage = () => {
 
   return (
     <>
-      <div className="flex h-[110%] -mt-[116px]">
-        <div className="w-full h-[90%] pt-[116px] p-8 relative">
+      <div className="flex h-[110%] -mt-[116px] justify-center">
+        <div className="xl:w-[70%] lg:w-[80%] md:w-[90%] h-[90%]  pt-[116px] p-8 relative">
           <div ref={imageRef} className="relative h-full w-full">
             <img
               src="/home/gallery-06.jpg"
@@ -75,13 +75,13 @@ const LandingPage = () => {
             />
           </div>
           <div
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 text-5xl cursor-pointer"
+            className="absolute -left-10 top-1/2 transform -translate-y-1/2 text-5xl cursor-pointer"
             onClick={showPrevImage}
           >
             <IoIosArrowBack />
           </div>
           <div
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 text-5xl cursor-pointer"
+            className="absolute -right-10 top-1/2 transform -translate-y-1/2 text-5xl cursor-pointer"
             onClick={showNextImage}
           >
             <IoIosArrowForward />
