@@ -89,7 +89,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="h-[110%] bg-white relative px-10">
-        <div className="w-[60%] h-full">
+        <div className="w-[60%] h-[130%] ">
           <img
             src="/home/man-sitting.webp"
             className="h-full w-full object-cover"
