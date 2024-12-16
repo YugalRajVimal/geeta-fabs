@@ -21,8 +21,8 @@ const OutletPage = () => {
       {page=="faq"&&<FaqAndPricing />}
       {page=="contact"&&<Contact />}
 
-      <Footer />
-    </div>
+      <Footer page={page} setPage={setPage} />
+    </div> 
   );
 };
 

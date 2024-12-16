@@ -102,7 +102,7 @@ const LandingPage = () => {
         <h1 className="text-4xl">Follow @geetafabs on Instagram</h1>
       </div>
       {/* Gallery  */}
-      <div className="bg-white px-10 flex flex-wrap justify-center gap-6">
+      <div className="bg-white px-10 flex flex-wrap justify-center gap-6 pb-10">
         <div className=" h-44 w-44 bg-zinc-100 ">
           <img
             src="/gallery/000001.webp"
