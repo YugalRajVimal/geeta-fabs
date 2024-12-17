@@ -41,22 +41,24 @@ const HomeCorousel = () => {
   };
 
   return (
-    <div id="carousel" className="w-full h-[100%] pt-[116px] p-8 relative">
-      <div className="relative h-full w-full flex gap-8 items-center">
-        {images.map((src, index) => (
-          <div
-            key={index}
-            className={`h-[90%] ${
-              index === currentIndex
-                ? "rounded-3xl w-full"
-                : "rounded-3xl w-[120px]"
-            } overflow-hidden shadow-md shadow-black`}
-            ref={(el) => (imageRefs.current[index] = el)}
-            onClick={() => handleImageClick(index)}
-          >
-            <img src={src} className="h-full w-full object-cover" />
-          </div>
-        ))}
+    <div className="flex h-[110%] -mt-[116px] justify-center">
+      <div id="carousel" className="w-full h-[100%] pt-[116px] p-8 relative">
+        <div className="relative h-full w-full flex gap-8 items-center">
+          {images.map((src, index) => (
+            <div
+              key={index}
+              className={`h-[90%] ${
+                index === currentIndex
+                  ? "rounded-3xl w-full"
+                  : "rounded-3xl w-[120px]"
+              } overflow-hidden shadow-md shadow-black`}
+              ref={(el) => (imageRefs.current[index] = el)}
+              onClick={() => handleImageClick(index)}
+            >
+              <img src={src} className="h-full w-full object-cover" />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

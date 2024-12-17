@@ -11,7 +11,7 @@ const HomeDigitialPrintingPage = () => {
           if (entry.isIntersecting) {
             // Animate the image from left to right
             gsap.fromTo(
-              ".image-container img", 
+              ".image-container img",
               { x: "-100%", opacity: 0 }, // Initial state: off-screen left, hidden
               {
                 x: "0%", // Final state: at the original position
@@ -20,10 +20,10 @@ const HomeDigitialPrintingPage = () => {
                 ease: "power3.out",
               }
             );
-            
+
             // Animate the text and PNG images from right to left
             gsap.fromTo(
-              ".text-container, .certificates-container", 
+              ".text-container, .certificates-container",
               { x: "100%", opacity: 0 }, // Initial state: off-screen right, hidden
               {
                 x: "0%", // Final state: at the original position
@@ -56,66 +56,70 @@ const HomeDigitialPrintingPage = () => {
 
   return (
     <div
-      id="digitalPrintingHome"
-      className="flex items-center justify-between w-full h-full"
+      className="h-[100%] flex items-center justify-evenly bg-white relative px-10"
     >
-      {/* Image */}
-      <div className="image-container w-[35%] h-[80%] overflow-hidden">
-        <img
-          src="/home/abc.avif"
-          alt="Digital Printing"
-          className="h-full object-contain"
-        />
-      </div>
-
-      {/* Text and Description */}
-      <div className="text-container w-[50%] h-full flex flex-col justify-evenly px-4">
-        <div>
-          <h1 className="text-5xl font-bold italic">
-            Digital Textile Printing
-          </h1>
-          <h5 className="text-lg font-bold">YOUR DESIGN OVER YOUR FABRIC</h5>
-        </div>
-        <div className="flex flex-col gap-2">
-          <p>
-            We offer comprehensive and state of the art solutions in design,
-            product development, manufacturing, quality control, logistics, and
-            delivery management.
-          </p>
-          <p>
-            Geeta Fabs specializes in all kinds of Garment manufacturing
-            products like Kaftan, Jumpsuits, Scarfs, and home furnishing
-            products.
-          </p>
-          <p>
-            Expert guidance on vendor selection, best suited to the customer’s
-            product need with a commitment to quality requirements, budget, size
-            of the orders, technical and manufacturing capabilities.
-          </p>
-          <p>
-            We have a systematic design process where we generate trend reports,
-            research, make technical drawings, source the right fabrics and
-            trims in order to create the ideal sample and present them to
-            customers.
-          </p>
-          <p>
-            Dedicated team for smooth administrative, logistics, and delivery
-            support.
-          </p>
+      <div
+        id="digitalPrintingHome"
+        className="flex items-center justify-between w-full h-full"
+      >
+        {/* Image */}
+        <div className="image-container w-[35%] h-[80%] overflow-hidden">
+          <img
+            src="/home/abc.avif"
+            alt="Digital Printing"
+            className="h-full object-contain"
+          />
         </div>
 
-        {/* PNGs */}
-        <div className="certificates-container flex justify-between px-4">
-          <img
-            src="/home/certification.webp"
-            alt="Certification"
-            className="transition-all"
-          />
-          <img
-            src="/home/signature.webp"
-            alt="Signature"
-            className="transition-all"
-          />
+        {/* Text and Description */}
+        <div className="text-container w-[50%] h-full flex flex-col justify-evenly px-4">
+          <div>
+            <h1 className="text-5xl font-bold italic">
+              Digital Textile Printing
+            </h1>
+            <h5 className="text-lg font-bold">YOUR DESIGN OVER YOUR FABRIC</h5>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p>
+              We offer comprehensive and state of the art solutions in design,
+              product development, manufacturing, quality control, logistics,
+              and delivery management.
+            </p>
+            <p>
+              Geeta Fabs specializes in all kinds of Garment manufacturing
+              products like Kaftan, Jumpsuits, Scarfs, and home furnishing
+              products.
+            </p>
+            <p>
+              Expert guidance on vendor selection, best suited to the customer’s
+              product need with a commitment to quality requirements, budget,
+              size of the orders, technical and manufacturing capabilities.
+            </p>
+            <p>
+              We have a systematic design process where we generate trend
+              reports, research, make technical drawings, source the right
+              fabrics and trims in order to create the ideal sample and present
+              them to customers.
+            </p>
+            <p>
+              Dedicated team for smooth administrative, logistics, and delivery
+              support.
+            </p>
+          </div>
+
+          {/* PNGs */}
+          <div className="certificates-container flex justify-between px-4">
+            <img
+              src="/home/certification.webp"
+              alt="Certification"
+              className="transition-all"
+            />
+            <img
+              src="/home/signature.webp"
+              alt="Signature"
+              className="transition-all"
+            />
+          </div>
         </div>
       </div>
     </div>
