@@ -1,31 +1,103 @@
-import React, { useState } from "react";
-import { RiShareForwardLine } from "react-icons/ri";
+import React, { useState, useEffect } from "react";
 import { IoClose } from "react-icons/io5";
+import gsap from "gsap";
 
 const NavBar = (props) => {
   const { page, setPage } = props;
   const [menuOpen, setMenuOpen] = useState(false);
+  const [animating, setAnimating] = useState(false); // To handle animation state
 
-  const toggleMenu = () => {
+  const toggleMenu = async () => {
+    document.body.classList.remove("overflow-hidden");
+
+    // Animate the height collapse when the menu closes
+
+    await gsap.to(".menu-container", {
+      height: "0px",
+      duration: 0.5,
+      ease: "power2.in",
+    });
+
+    // Fade out the nav items before collapsing the menu
+    gsap.to(".nav-link", {
+      y: 20,
+      opacity: 0,
+      stagger: 0.1,
+      duration: 0.2,
+    });
+
     setMenuOpen(!menuOpen);
   };
 
+  const handleMenuItemClick = (pageName) => {
+    setAnimating(true); // Start animation
+    gsap.to(".nav-link", {
+      y: 20,
+      opacity: 0,
+      stagger: 0.1,
+      duration: 0.3,
+      onComplete: () => {
+        setPage(pageName);
+        toggleMenu(); // Close menu after animation completes
+        setAnimating(false); // Reset animating state
+      },
+    });
+  };
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add("overflow-hidden");
+
+      // Animate the height of the menu container
+      gsap.fromTo(
+        ".menu-container",
+        { height: 0 },
+        { height: "100vh", duration: 0.5, ease: "power2.out" }
+      );
+
+      // Animate the nav items
+      gsap.fromTo(
+        ".nav-link",
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, stagger: 0.1, duration: 0.5 }
+      );
+    } else {
+      // document.body.classList.remove("overflow-hidden");
+
+      // // Animate the height collapse when the menu closes
+
+      // gsap.to(".menu-container", {
+      //   height: "0px",
+      //   duration: 0.5,
+      //   ease: "power2.in",
+      // });
+
+      // // Fade out the nav items before collapsing the menu
+      // gsap.to(".nav-link", {
+      //   y: 20,
+      //   opacity: 0,
+      //   stagger: 0.1,
+      //   duration: 0.3,
+      // });
+    }
+  }, [menuOpen]);
+
   return (
-    <div className="h-[116px] flex justify-center items-center p-8 w-full">
-      <div className="p-4 bg-zinc-100 w-full flex justify-between items-center z-[20]">
+    <div className="relative w-full z-10">
+      <div className="p-4 w-full flex shadow-md justify-between items-center z-[20]">
         {/* Logo */}
         <div className="flex-1 flex justify-start text-xl lg:text-left">
-          <img src="/home/logo.png" className="h-[30px]" alt="Logo" />
+          <img src="/home/logo.png" className="h-[40px]" alt="Logo" />
         </div>
 
         {/* Hamburger Menu Icon */}
-        <div className="lg:hidden flex-1 text-right">
+        <div className="flex-1 text-right">
           <button className="focus:outline-none" onClick={toggleMenu}>
             {menuOpen ? (
-              <IoClose className="w-6 h-6" />
+              <IoClose className="w-8 h-8" onClick={(e)=>{e.stopPropagation();handleMenuItemClick()}}/>
             ) : (
               <svg
-                className="w-6 h-6"
+                className="w-8 h-8"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -41,114 +113,57 @@ const NavBar = (props) => {
             )}
           </button>
         </div>
-
-        {/* Nav Items for larger screens */}
-        <div className="hidden lg:flex flex-2 uppercase lg:flex-row gap-3 items-center justify-center text-sm">
-          <ul className="flex gap-3">
-            <li
-              onClick={() => setPage("home")}
-              className={`${page === "home" && "text-[#c02411]"}`}
-            >
-              Home
-            </li>
-            <li
-              onClick={() => setPage("about")}
-              className={`${page === "about" && "text-[#c02411]"}`}
-            >
-              About
-            </li>
-            <li
-              onClick={() => setPage("services")}
-              className={`${page === "services" && "text-[#c02411]"}`}
-            >
-              Services
-            </li>
-            <li
-              onClick={() => setPage("gallery")}
-              className={`${page === "gallery" && "text-[#c02411]"}`}
-            >
-              Gallery
-            </li>
-            <li
-              onClick={() => setPage("faq")}
-              className={`${page === "faq" && "text-[#c02411]"}`}
-            >
-              FAQ & Pricing
-            </li>
-            <li
-              onClick={() => setPage("contact")}
-              className={`${page === "contact" && "text-[#c02411]"}`}
-            >
-              Contact
-            </li>
-          </ul>
-        </div>
-
-        {/* Share */}
-        <div className="flex-1 flex justify-end text-right hidden lg:block">
-          <span className="flex justify-end text-xl">
-            <a href="https://geetafabs.com">
-              <RiShareForwardLine />
-            </a>
-          </span>
-        </div>
       </div>
 
       {/* Nav Items for small screens */}
       {menuOpen && (
-        <div className="absolute top-[116px] left-0 w-full bg-zinc-100 z-10 p-4 lg:hidden">
-          <ul className="flex flex-col gap-3 items-center justify-center text-sm">
+        <div className="menu-container absolute top-[100%] pb-[216px] pt-[100px] w-full bg-zinc-100 z-10 flex flex-col justify-center items-center">
+          <ul className="flex flex-col gap-3 items-center justify-evenly text-sm h-full w-full">
             <li
-              onClick={() => {
-                setPage("home");
-                setMenuOpen(false);
-              }}
-              className={`${page === "home" && "text-[#c02411]"}`}
+              onClick={() => handleMenuItemClick("home")}
+              className={`nav-link cursor-pointer ${
+                page === "home" && "text-[#c02411]"
+              }`}
             >
               Home
             </li>
             <li
-              onClick={() => {
-                setPage("about");
-                setMenuOpen(false);
-              }}
-              className={`${page === "about" && "text-[#c02411]"}`}
+              onClick={() => handleMenuItemClick("about")}
+              className={`nav-link cursor-pointer ${
+                page === "about" && "text-[#c02411]"
+              }`}
             >
               About
             </li>
             <li
-              onClick={() => {
-                setPage("services");
-                setMenuOpen(false);
-              }}
-              className={`${page === "services" && "text-[#c02411]"}`}
+              onClick={() => handleMenuItemClick("services")}
+              className={`nav-link cursor-pointer ${
+                page === "services" && "text-[#c02411]"
+              }`}
             >
               Services
             </li>
             <li
-              onClick={() => {
-                setPage("gallery");
-                setMenuOpen(false);
-              }}
-              className={`${page === "gallery" && "text-[#c02411]"}`}
+              onClick={() => handleMenuItemClick("gallery")}
+              className={`nav-link cursor-pointer ${
+                page === "gallery" && "text-[#c02411]"
+              }`}
             >
               Gallery
             </li>
             <li
-              onClick={() => {
-                setPage("faq");
-                setMenuOpen(false);
-              }}
-              className={`${page === "faq" && "text-[#c02411]"}`}
+              onClick={() => handleMenuItemClick("faq")}
+              className={`nav-link cursor-pointer ${
+                page === "faq" && "text-[#c02411]"
+              }`}
             >
               FAQ & Pricing
             </li>
             <li
-              onClick={() => {
-                setPage("contact");
-                setMenuOpen(false);
-              }}
-              className={`${page === "contact" && "text-[#c02411]"}`}
+              onClick={() => handleMenuItemClick("contact")}
+              className={`nav-link cursor-pointer ${
+                page === "contact" && "text-[#c02411]"
+              }`}
             >
               Contact
             </li>
