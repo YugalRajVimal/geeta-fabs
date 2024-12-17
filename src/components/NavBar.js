@@ -30,6 +30,7 @@ const NavBar = (props) => {
   };
 
   const handleMenuItemClick = (pageName) => {
+
     setAnimating(true); // Start animation
     gsap.to(".nav-link", {
       y: 20,
@@ -94,7 +95,7 @@ const NavBar = (props) => {
         <div className="flex-1 text-right">
           <button className="focus:outline-none" onClick={toggleMenu}>
             {menuOpen ? (
-              <IoClose className="w-8 h-8" onClick={(e)=>{e.stopPropagation();handleMenuItemClick()}}/>
+              <IoClose className="w-8 h-8" onClick={(e)=>{e.stopPropagation();handleMenuItemClick(page)}}/>
             ) : (
               <svg
                 className="w-8 h-8"
