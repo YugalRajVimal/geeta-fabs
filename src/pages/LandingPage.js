@@ -15,7 +15,7 @@ const LandingPage = () => {
       >
         <HomeDigitialPrintingPage />
       </div>
-      <div className="h-[110%] bg-white relative px-10 bg-[#8eb9e3]">
+      <div className="h-[100%] bg-white relative px-10 bg-[#8eb9e3]">
         <div className="w-[60%] h-full absolute top-0 left-0 z-10 px-10">
           <div className="w-full h-full flex flex-col justify-evenly ">
             <div className="flex flex-col gap-2 ">
@@ -39,7 +39,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-[40%] h-full absolute top-0 right-5 ">
+        <div className="w-[40%] h-full absolute top-0 right-0 ">
           <img
             src="/home/tailoring.webp"
             className="h-full w-full object-cover "

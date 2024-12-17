@@ -30,7 +30,6 @@ const NavBar = (props) => {
   };
 
   const handleMenuItemClick = (pageName) => {
-
     setAnimating(true); // Start animation
     gsap.to(".nav-link", {
       y: 20,
@@ -64,15 +63,12 @@ const NavBar = (props) => {
       );
     } else {
       // document.body.classList.remove("overflow-hidden");
-
       // // Animate the height collapse when the menu closes
-
       // gsap.to(".menu-container", {
       //   height: "0px",
       //   duration: 0.5,
       //   ease: "power2.in",
       // });
-
       // // Fade out the nav items before collapsing the menu
       // gsap.to(".nav-link", {
       //   y: 20,
@@ -91,11 +87,21 @@ const NavBar = (props) => {
           <img src="/home/logo.png" className="h-[40px]" alt="Logo" />
         </div>
 
+        <div className="font-serif text-xl">
+          <h1>Geeta Fabs | Digital Textile Printing & Garment Manufacturing</h1>
+        </div>
+
         {/* Hamburger Menu Icon */}
         <div className="flex-1 text-right">
           <button className="focus:outline-none" onClick={toggleMenu}>
             {menuOpen ? (
-              <IoClose className="w-8 h-8" onClick={(e)=>{e.stopPropagation();handleMenuItemClick(page)}}/>
+              <IoClose
+                className="w-8 h-8"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleMenuItemClick(page);
+                }}
+              />
             ) : (
               <svg
                 className="w-8 h-8"

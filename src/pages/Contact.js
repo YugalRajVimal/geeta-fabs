@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="-mt-[116px] bg-gray-50">
       <div className="pt-[116px] h-full px-6 md:px-10">
-        <h1 className="text-center text-4xl md:text-6xl font-bold italic text-blue-800 mb-4">
+        <h1 className="text-center text-4xl md:text-6xl  italic text-black mb-4 font-serif">
           Contact Us
         </h1>
         <p className="text-center px-4 md:px-20 lg:px-80 text-lg text-gray-700">
@@ -22,7 +22,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 p-4 md:p-8 text-center flex flex-col justify-center">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4 text-blue-800">
+            <h1 className="text-3xl md:text-4xl  mb-4 text-blue-800 font-serif">
               Get in Touch
             </h1>
             <p className="text-gray-600 mb-6">

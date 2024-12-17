@@ -52,7 +52,7 @@ const FaqAndPricing = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-24 pt-[116px]">
         <div className="flex flex-col lg:flex-row lg:gap-16">
           <div className="w-full lg:w-1/2">
-            <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-8">Pricing</h1>
+            <h1 className="text-4xl md:text-5xl  text-blue-900 mb-8 font-serif">Pricing</h1>
             <div className="space-y-4">
               <div className="shadow-lg rounded-lg">
                 <div
@@ -89,7 +89,7 @@ const FaqAndPricing = () => {
                 )}
               </div>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mt-10 mb-8">General FAQ's</h1>
+            <h1 className="text-4xl md:text-5xl  text-blue-900 mt-10 mb-8 font-serif">General FAQ's</h1>
             <div className="space-y-4">
               {faqs.map((faq, index) => (
                 <div key={index} className="shadow-lg rounded-lg">
@@ -110,7 +110,7 @@ const FaqAndPricing = () => {
             </div>
           </div>
           <div className="w-full lg:w-1/2 mt-10 lg:mt-0 flex flex-col justify-center">
-            <h1 className="text-4xl md:text-5xl italic text-blue-900 mt-10 mb-8">Ask Any Question</h1>
+            <h1 className="text-4xl md:text-5xl italic text-blue-900 mt-10 mb-8 font-serif">Ask Any Question</h1>
             <QuestionForm />
           </div>
         </div>
