@@ -101,7 +101,7 @@ const Footer = ({ setPage }) => {
           <ul>
             <li className="flex gap-2 items-center">
               <IoCallOutline />
-              <a href="tel:+1234567890">+123 456 7890</a>
+              <a href="tel:+1234567890">+91 95801 91637</a>
             </li>
             <li className="flex gap-2 items-center">
               <IoMailOutline />
@@ -109,7 +109,7 @@ const Footer = ({ setPage }) => {
             </li>
             <li className="flex gap-2 items-center">
               <IoLocationOutline />
-              <span>123 Main St, City, Country</span>
+              <span>Plot No-550, Udyog Vihar, Phase 5, Sector 19, Gurgaon</span>
             </li>
           </ul>
         </div>

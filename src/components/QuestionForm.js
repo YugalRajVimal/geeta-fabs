@@ -76,7 +76,7 @@ const QuestionForm = () => {
         <div>
           <button
             type="submit"
-            className="w-full  text-black p-2  hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="w-full  text-black p-2  focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
           >
             Submit
           </button>

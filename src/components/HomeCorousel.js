@@ -1,67 +1,94 @@
 import React, { useEffect, useRef, useState } from "react";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import gsap from "gsap";
 
-const HomeCorousel = () => {
+const HomeCarousel = () => {
   const images = [
     "/home/gallery-06.jpg",
     "/home/Tropical-.webp",
     "/home/tropical-flower-pattern-vector-6331789.webp",
   ];
-  const imageRefs = useRef([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [nextSlide, setNextSlide] = useState(1);
+  const currentSlideRef = useRef(null);
+  const nextSlideRef = useRef(null);
+
+  const slideTo = (direction) => {
+    const tl = gsap.timeline({
+      onComplete: () => {
+        setCurrentSlide(nextSlide);
+        gsap.set(currentSlideRef.current, { x: "0%" });
+        gsap.set(nextSlideRef.current, { x: direction === "next" ? "100%" : "-100%" });
+      },
+    });
+
+    tl.to(currentSlideRef.current, { x: direction === "next" ? "-100%" : "100%", duration: 1 }, 0)
+      .to(nextSlideRef.current, { x: "0%", duration: 1 }, 0);
+  };
+
+  const nextImage = () => {
+    setNextSlide((currentSlide + 1) % images.length);
+    slideTo("next");
+  };
+
+  const prevImage = () => {
+    setNextSlide((currentSlide - 1 + images.length) % images.length);
+    slideTo("prev");
+  };
+
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      nextImage();
     }, 4000);
 
     return () => clearInterval(timer);
-  }, [images.length, currentIndex]);
+  }, [currentSlide]);
 
   useEffect(() => {
-    if (imageRefs.current[currentIndex]) {
-      gsap.to(imageRefs.current[currentIndex], {
-        width: "100%",
-        height: "90%",
-        duration: 0.5,
-      });
-      images.forEach((_, index) => {
-        if (index !== currentIndex) {
-          gsap.to(imageRefs.current[index], {
-            width: "120px",
-            height: "90%",
-            duration: 0.5,
-          });
-        }
-      });
+    // Ensure next slide is set correctly before starting the animation
+    if (nextSlide === (currentSlide + 1) % images.length) {
+      slideTo("next");
+    } else if (nextSlide === (currentSlide - 1 + images.length) % images.length) {
+      slideTo("prev");
     }
-  }, [currentIndex, images]);
-
-  const handleImageClick = (index) => {
-    setCurrentIndex(index);
-  };
+  }, [nextSlide]);
 
   return (
-    <div className="flex h-[110%] -mt-[116px] justify-center">
-      <div id="carousel" className="w-full h-[100%] pt-[116px] p-8 relative">
-        <div className="relative h-full w-full flex gap-8 items-center">
-          {images.map((src, index) => (
-            <div
-              key={index}
-              className={`h-[90%] ${
-                index === currentIndex
-                  ? "rounded-3xl w-full"
-                  : "rounded-3xl w-[120px]"
-              } overflow-hidden shadow-md shadow-black`}
-              ref={(el) => (imageRefs.current[index] = el)}
-              onClick={() => handleImageClick(index)}
-            >
-              <img src={src} className="h-full w-full object-cover" />
+    <div className="flex h-full w-full justify-center -mt-24">
+      <div id="carousel" className="relative w-full h-full p-8 pt-32">
+        <div className="relative flex items-center gap-8 h-full">
+          <div className="relative w-full h-full overflow-hidden rounded-3xl shadow-md shadow-black flex items-center">
+            <div className="absolute w-full h-full">
+              <img
+                src={images[currentSlide]}
+                ref={currentSlideRef}
+                className="h-full w-full object-cover absolute"
+              />
+              <img
+                src={images[nextSlide]}
+                ref={nextSlideRef}
+                className="h-full w-full object-cover absolute"
+                style={{ transform: "translateX(100%)" }}
+              />
             </div>
-          ))}
+            <div
+              className="absolute left-5 top-1/2 transform -translate-y-1/2 text-3xl cursor-pointer"
+              onClick={prevImage}
+            >
+              <IoIosArrowBack />
+            </div>
+            <div
+              className="absolute right-5 top-1/2 transform -translate-y-1/2 text-3xl cursor-pointer"
+              onClick={nextImage}
+            >
+              <IoIosArrowForward />
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default HomeCorousel;
+export default HomeCarousel;

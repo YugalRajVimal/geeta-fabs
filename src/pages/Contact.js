@@ -32,7 +32,7 @@ const Contact = () => {
             <div className="flex flex-col md:flex-row justify-around mb-6">
               <div className="mb-4 md:mb-0">
                 <h5 className="text-xl font-semibold text-gray-800">Phone</h5>
-                <p className="text-gray-600">0-859-520-5465</p>
+                <p className="text-gray-600">+91 95801 91637</p>
               </div>
               <div>
                 <h5 className="text-xl font-semibold text-gray-800">Email</h5>
@@ -41,7 +41,7 @@ const Contact = () => {
             </div>
             <div className="flex flex-col items-center mb-6">
               <h5 className="text-xl font-semibold text-gray-800">Location</h5>
-              <p className="text-gray-600">76-D, Phase IV, Sector 18, Gurgaon</p>
+              <p className="text-gray-600">Plot No-550, Udyog Vihar, Phase 5, Sector 19, Gurgaon</p>
             </div>
             <QuestionForm />
           </div>

@@ -60,7 +60,7 @@ const HomeDigitialPrintingPage = () => {
     >
       <div
         id="digitalPrintingHome"
-        className="flex items-center justify-between w-full h-full"
+        className="flex items-center justify-evenly w-full h-full"
       >
         {/* Image */}
         <div className="image-container w-[35%] h-[80%] overflow-hidden">
