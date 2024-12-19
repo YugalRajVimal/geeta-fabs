@@ -15,7 +15,7 @@ const GarmentManufacturing = () => {
           <div className="flex flex-col gap-2">
             <h1 className="text-5xl italic">Garment Manufacturing</h1>
             <h5 className="text-lg bold">AS PER YOUR REQUIREMENTS.</h5>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 text-justify">
               <p>
                 From sketch to warehouse, clothing can only be made with
                 technical expertise and a strong sense of design.

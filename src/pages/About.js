@@ -42,7 +42,7 @@ const About = () => {
             <div className="w-[60%] p-8 flex flex-col justify-center">
               <h1 className="text-4xl font-mono ">Welcome to Geeta Fabs</h1>
               <p className="text-lg ">ABOUT OUR COMPANY</p>
-              <div className="flex flex-col gap-4 pt-6 pl-4">
+              <div className="flex flex-col gap-4 pt-6 pl-4 text-justify">
                 <p>
                   Geeta Fabs is Delhi NCR based a large format digital fabric
                   printing studio & garment manufacturing hub, that supplies
@@ -110,7 +110,7 @@ const About = () => {
             <h1 className="text-2xl font-bold ">
               Our State-of-the-Art Infrastructure
             </h1>
-            <div className="pl-4">
+            <div className="pl-4 text-justify">
               <p>
                 At Geeta Fabs, we take pride in our modern infrastructure,
                 powered by a team of highly skilled technicians and designers.
@@ -149,7 +149,7 @@ const About = () => {
           </div>
           <div className="px-[72px] bg-white flex flex-col gap-4 pb-8">
             <h1 className="text-2xl font-bold ">Why Choose Us?</h1>
-            <p className="pl-4">
+            <p className="pl-4 text-justify">
               At Geeta Fabs, we are leaders in digital printing, textile and
               graphic design, product development, and production. Our mission
               is to deliver unparalleled quality, innovation, and customer
@@ -157,7 +157,7 @@ const About = () => {
               needs.
             </p>
 
-            <ul className="list-disc pl-5">
+            <ul className="list-disc pl-5 flex flex-col gap-2 text-justify">
               <li>
                 <span className="font-bold">
                   Personalized Design Collaboration

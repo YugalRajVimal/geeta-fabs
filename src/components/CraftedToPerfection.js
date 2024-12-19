@@ -72,9 +72,11 @@ const CraftedToPerfection = () => {
         {/* Text and Description */}
         <div className="text-container w-[50%] h-full flex flex-col justify-evenly px-4">
           <div>
-            <h1 className="text-5xl italic">CRAFTED TO PERFECTION.</h1>
+            <h1 className="text-5xl italic">Textile Innovation</h1>
+            <h5 className="text-lg pl-4"> CRAFTED TO PERFECTION.</h5>
           </div>
-          <div className="flex flex-col gap-2 pl-8 pt-4">
+         
+          <div className="flex flex-col gap-2 pl-8 pt-4 text-justify">
             <p>
               At Geeta Fabs, we believe innovation is the cornerstone of
               exceptional textile manufacturing. With a profound understanding
@@ -98,31 +100,7 @@ const CraftedToPerfection = () => {
               dedication to minimizing environmental impact while maintaining
               exceptional quality.
             </p>
-            <p>
-              At Geeta Fabs, we provide an end-to-end service, managing every
-              aspect of textile manufacturing—from design and prototyping to
-              final production. This seamless coordination ensures faster
-              delivery and impeccable quality control, empowering our clients to
-              focus on their vision while we handle the details.
-            </p>
-            <p>
-              Our innovative approach opens the door to unlimited design
-              possibilities, crafting unique textures, patterns, and finishes
-              that make your products truly stand out. Driven by a passion for
-              excellence, our research and development team constantly explores
-              new techniques and sustainable materials to keep us ahead of
-              industry trends.
-            </p>
-            <p>
-              If you’re a brand or retailer seeking innovative, high-quality,
-              and sustainable textile solutions, Geeta Fabs is your trusted
-              partner. Based in Gurugram, we collaborate globally to deliver
-              groundbreaking textiles that redefine market standards. Let us
-              transform your ideas into reality and take your products to new
-              heights.
-            </p>
           </div>
-
           {/* PNGs
           <div className="certificates-container flex justify-between px-4">
             <img

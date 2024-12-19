@@ -77,9 +77,9 @@ const HomeDigitialPrintingPage = () => {
             <h1 className="text-5xl italic pb-4">
               Digital Textile Printing
             </h1>
-            <h5 className="text-lg font-bold">YOUR DESIGN OVER YOUR FABRIC</h5>
+            <h5 className="text-lg">YOUR DESIGN OVER YOUR FABRIC</h5>
           </div>
-          <div className="flex flex-col gap-2 pl-4">
+          <div className="flex flex-col gap-2 pl-4 text-justify">
             <p>
               We offer comprehensive and state of the art solutions in design,
               product development, manufacturing, quality control, logistics,
