@@ -42,7 +42,7 @@ const About = () => {
             <div className="w-[60%] p-8 flex flex-col justify-center">
               <h1 className="text-4xl font-mono ">Welcome to Geeta Fabs</h1>
               <p className="text-lg ">ABOUT OUR COMPANY</p>
-              <div className="flex flex-col gap-4 pt-6">
+              <div className="flex flex-col gap-4 pt-6 pl-4">
                 <p>
                   Geeta Fabs is Delhi NCR based a large format digital fabric
                   printing studio & garment manufacturing hub, that supplies
@@ -67,7 +67,7 @@ const About = () => {
           </div>
 
           {/* Additional Information Section */}
-          <div className="px-[72px] bg-white flex flex-col gap-4 pb-8">
+          <div className="pr-[72px] pl-[88px] bg-white flex flex-col gap-4 pb-8 ">
             <p>
               We have latest technology textile printing machines to process
               high resolution printing results of fabric surpassing 1000 meters
@@ -110,47 +110,53 @@ const About = () => {
             <h1 className="text-2xl font-bold ">
               Our State-of-the-Art Infrastructure
             </h1>
-            <p>
-              At Geeta Fabs, we take pride in our modern infrastructure, powered
-              by a team of highly skilled technicians and designers. Their
-              expertise enables us to consistently deliver premium-quality
-              prints within remarkably short timeframes. Our advanced ink
-              sublimation printing technology ensures flawless image transfers
-              directly onto polyester-based media or fabrics, using specially
-              coated paper subjected to precise heat and pressure conditions.
-            </p>
-            <p>
-              Equipped with the latest high-speed, imported multi-head Allwin
-              Printer machines, our facility boasts an impressive production
-              capacity of up to 2,000 meters per day. This robust setup allows
-              us to handle high-volume orders while maintaining exceptional
-              quality standards. Our process is rooted in precision-driven
-              measurements and cutting-edge manufacturing techniques, ensuring
-              the finest details are captured in every print.
-            </p>
-            <p>
-              To align with global quality and environmental benchmarks, we
-              exclusively use eco-friendly, Azo-free, non-harmful Korean inks.
-              These inks are not only safe for the environment but also deliver
-              unmatched color vibrancy and durability, conforming to
-              international quality control standards.
-            </p>
-            <p>
-              What truly sets Geeta Fabs apart is our unwavering commitment to
-              excellence. Every digital print we produce is crafted with
-              outstanding quality, sophisticated finishing, and competitive
-              pricing. Whether you require customized designs or bulk orders,
-              Geeta Fabs is your trusted partner for delivering superior results
-              that exceed expectations.
-            </p>
+            <div className="pl-4">
+              <p>
+                At Geeta Fabs, we take pride in our modern infrastructure,
+                powered by a team of highly skilled technicians and designers.
+                Their expertise enables us to consistently deliver
+                premium-quality prints within remarkably short timeframes. Our
+                advanced ink sublimation printing technology ensures flawless
+                image transfers directly onto polyester-based media or fabrics,
+                using specially coated paper subjected to precise heat and
+                pressure conditions.
+              </p>
+              <p>
+                Equipped with the latest high-speed, imported multi-head Allwin
+                Printer machines, our facility boasts an impressive production
+                capacity of up to 2,000 meters per day. This robust setup allows
+                us to handle high-volume orders while maintaining exceptional
+                quality standards. Our process is rooted in precision-driven
+                measurements and cutting-edge manufacturing techniques, ensuring
+                the finest details are captured in every print.
+              </p>
+              <p>
+                To align with global quality and environmental benchmarks, we
+                exclusively use eco-friendly, Azo-free, non-harmful Korean inks.
+                These inks are not only safe for the environment but also
+                deliver unmatched color vibrancy and durability, conforming to
+                international quality control standards.
+              </p>
+              <p>
+                What truly sets Geeta Fabs apart is our unwavering commitment to
+                excellence. Every digital print we produce is crafted with
+                outstanding quality, sophisticated finishing, and competitive
+                pricing. Whether you require customized designs or bulk orders,
+                Geeta Fabs is your trusted partner for delivering superior
+                results that exceed expectations.
+              </p>
+            </div>
           </div>
           <div className="px-[72px] bg-white flex flex-col gap-4 pb-8">
             <h1 className="text-2xl font-bold ">Why Choose Us?</h1>
-            At Geeta Fabs, we are leaders in digital printing, textile and
-            graphic design, product development, and production. Our mission is
-            to deliver unparalleled quality, innovation, and customer
-            satisfaction, making us your trusted partner for all your printing
-            needs.
+            <p className="pl-4">
+              At Geeta Fabs, we are leaders in digital printing, textile and
+              graphic design, product development, and production. Our mission
+              is to deliver unparalleled quality, innovation, and customer
+              satisfaction, making us your trusted partner for all your printing
+              needs.
+            </p>
+
             <ul className="list-disc pl-5">
               <li>
                 <span className="font-bold">
