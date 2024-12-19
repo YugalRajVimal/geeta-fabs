@@ -13,7 +13,7 @@ const GarmentManufacturing = () => {
           transition={{ duration: 1, ease: 'easeOut' }} // Add smooth transition
         >
           <div className="flex flex-col gap-2">
-            <h1 className="text-5xl bold italic">Garment Manufacturing</h1>
+            <h1 className="text-5xl italic">Garment Manufacturing</h1>
             <h5 className="text-lg bold">AS PER YOUR REQUIREMENTS.</h5>
             <div className="flex flex-col gap-2">
               <p>

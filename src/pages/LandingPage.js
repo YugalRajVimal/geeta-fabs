@@ -4,6 +4,7 @@ import HomeCorousel from "../components/HomeCorousel";
 import HomeDigitialPrintingPage from "../components/HomeDigitialPrintingPage";
 import GarmentManufacturing from "../components/GarmentManufacturing";
 import { motion } from 'framer-motion';
+import CraftedToPerfection from "../components/CraftedToPerfection";
 
 
 const LandingPage = () => {
@@ -14,6 +15,7 @@ const LandingPage = () => {
       <HomeDigitialPrintingPage />
 
       <GarmentManufacturing />
+      <CraftedToPerfection />
       <motion.div
         className="bg-white p-16 flex justify-center items-center"
         initial={{ opacity: 0, y: 50 }} // Initial state

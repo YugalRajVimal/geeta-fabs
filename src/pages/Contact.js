@@ -4,15 +4,15 @@ import QuestionForm from "../components/QuestionForm";
 const Contact = () => {
   return (
     <div className="-mt-[116px] bg-gray-50">
-      <div className="pt-[116px] h-full px-6 md:px-10">
-        <h1 className="text-center text-4xl md:text-6xl  italic text-black mb-4 font-serif">
+      <div className="pt-[116px] w-full h-full px-6 md:px-10">
+        <h1 className="text-center text-5xl italic text-black mb-4 pt-4 font-serif">
           Contact Us
         </h1>
-        <p className="text-center px-4 md:px-20 lg:px-80 text-lg text-gray-700">
+        <h5 className="text-center px-4 w-full  md:px-20  text-lg text-gray-700">
           Whether you have a question about features, trials, pricing, need a
           demo, or anything else, our team is ready to answer all your
           questions.
-        </p>
+        </h5>
         <div className="w-full h-full bg-white mt-8 flex flex-col md:flex-row rounded-lg">
           <div className="w-full md:w-1/2 bg-cover bg-center rounded-l-lg flex justify-center items-center">
             <div className="h-[70%] w-[80%] bg-pink-400 -translate-x-6 -translate-y-6">

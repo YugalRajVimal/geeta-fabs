@@ -38,10 +38,10 @@ const Services = () => {
   return (
     <div className="-mt-[116px] bg-white">
       <div className="pt-[116px] px-10 flex flex-col gap-8 font-mono">
-        <h1 className="text-center text-7xl  italic font-serif py-4 service-item">Services</h1>
+        <h1 className="text-center text-5xl  italic font-serif py-4 pt-4 service-item">Services</h1>
 
         <div className="h-[300px] flex relative service-item">
-          <div className="w-1/2 h-full p-8 flex justify-center items-center text-7xl service-image">
+          <div className="w-1/2 h-full p-8 flex justify-center items-center text-5xl service-image">
             <div className="h-full w-full">
               <img
                 src="/services/000001.webp"
@@ -50,13 +50,13 @@ const Services = () => {
               />
             </div>
           </div>
-          <div className="w-[50%] h-full p-8 flex justify-center items-center text-7xl absolute right-10">
+          <div className="w-[50%] h-full p-8 flex justify-center items-center text-5xl absolute right-10">
             Cushion Covers
           </div>
         </div>
 
         <div className="h-[300px] flex flex-row-reverse relative service-item">
-          <div className="w-1/2 h-full p-8 flex justify-center items-center text-7xl service-image">
+          <div className="w-1/2 h-full p-8 flex justify-center items-center text-5xl service-image">
             <div className="h-full w-full">
               <img
                 src="/services/000002.webp"
@@ -65,13 +65,13 @@ const Services = () => {
               />
             </div>
           </div>
-          <div className="w-[50%] h-full p-8 flex justify-center items-center text-7xl absolute left-10">
+          <div className="w-[50%] h-full p-8 flex justify-center items-center text-5xl absolute left-10">
             Garment Manufacturing
           </div>
         </div>
 
         <div className="h-[300px] flex relative service-item">
-          <div className="w-1/2 h-full p-8 flex justify-center items-center text-7xl service-image">
+          <div className="w-1/2 h-full p-8 flex justify-center items-center text-5xl service-image">
             <div className="h-full w-full">
               <img
                 src="/services/000003.webp"
@@ -80,13 +80,13 @@ const Services = () => {
               />
             </div>
           </div>
-          <div className="w-[50%] h-full p-8 flex justify-center items-center text-7xl absolute right-10">
+          <div className="w-[50%] h-full p-8 flex justify-center items-center text-5xl absolute right-10">
             Home Furnishing
           </div>
         </div>
 
         <div className="h-[300px] flex flex-row-reverse relative service-item">
-          <div className="w-1/2 h-full p-8 flex justify-center items-center text-7xl service-image">
+          <div className="w-1/2 h-full p-8 flex justify-center items-center text-5xl service-image">
             <div className="h-full w-full">
               <img
                 src="/services/000004.webp"
@@ -95,13 +95,13 @@ const Services = () => {
               />
             </div>
           </div>
-          <div className="w-[50%] h-full p-8 flex justify-center items-center text-7xl absolute left-10">
+          <div className="w-[50%] h-full p-8 flex justify-center items-center text-5xl absolute left-10">
             Kaftaan
           </div>
         </div>
 
         <div className="h-[300px] flex relative service-item">
-          <div className="w-1/2 h-full p-8 flex justify-center items-center text-7xl service-image">
+          <div className="w-1/2 h-full p-8 flex justify-center items-center text-5xl service-image">
             <div className="h-full w-full">
               <img
                 src="/services/000005.webp"
@@ -110,13 +110,13 @@ const Services = () => {
               />
             </div>
           </div>
-          <div className="w-[50%] h-full p-8 flex justify-center items-center text-7xl absolute right-10">
+          <div className="w-[50%] h-full p-8 flex justify-center items-center text-5xl absolute right-10">
             Tote Bags
           </div>
         </div>
 
         <div className="h-[300px] flex flex-row-reverse relative service-item">
-          <div className="w-1/2 h-full p-8 flex justify-center items-center text-7xl service-image">
+          <div className="w-1/2 h-full p-8 flex justify-center items-center text-5xl service-image">
             <div className="h-full w-full">
               <img
                 src="/services/000006.webp"
@@ -125,7 +125,7 @@ const Services = () => {
               />
             </div>
           </div>
-          <div className="w-[50%] h-full p-8 flex justify-center items-center text-7xl absolute left-10">
+          <div className="w-[50%] h-full p-8 flex justify-center items-center text-5xl absolute left-10">
             Digital Printing
           </div>
         </div>

@@ -72,7 +72,7 @@ const NavBar = (props) => {
 
   return (
     <>
-      <div className="relative h-[70px] bg-red-900 flex lg:flex-row flex-col justify-center lg:justify-between items-center text-white  w-full z-10 px-4 ">
+      <div className="relative h-[90px] bg-red-900 flex lg:flex-row flex-col justify-center lg:justify-between items-center text-white  w-full z-10 px-4 ">
         <div className="flex items-center gap-1">
           <IoMdMail />
           info@geetafabs.com
@@ -82,7 +82,7 @@ const NavBar = (props) => {
           Plot No-550, Udyog Vihar, Phase 5, Sector 19, Gurgaon
         </div>
       </div>
-      <div className="relative h-[80px] shadow-md w-full z-10 px-4 lg:px-0">
+      <div className="relative h-[100px] shadow-md w-full z-10 px-4 lg:px-0">
         <div className=" w-full h-full flex  justify-between items-center z-[20]">
           {/* Logo */}
           <div className=" flex-1 flex justify-start lg:justify-center text-xl lg:text-left">
@@ -91,7 +91,7 @@ const NavBar = (props) => {
 
           <div className="w-[70%] hidden h-full  z-10 lg:flex flex-col items-center border-l-black border-y-0 border-r-0 border border-[0.2px]">
             <div className="flex justify-end item-center w-full pl-2">
-              <span className="block flex items-center gap-1 pr-2">
+              <span className="block flex items-center gap-1 pr-4 p-2">
                 <IoIosCall />
                 Phone No.+91 95801 91637
               </span>
@@ -100,7 +100,7 @@ const NavBar = (props) => {
             <ul className="flex gap-3 items-center justify-evenly text-sm h-full w-full">
               <li
                 onClick={() => handleLargeScreenMenuItemClick("home")}
-                className={`cursor-pointer ${
+                className={`cursor-pointer font-bold ${
                   page === "home" && "text-[#c02411]"
                 }`}
               >
@@ -108,15 +108,15 @@ const NavBar = (props) => {
               </li>
               <li
                 onClick={() => handleLargeScreenMenuItemClick("about")}
-                className={`cursor-pointer ${
+                className={`cursor-pointer font-bold ${
                   page === "about" && "text-[#c02411]"
                 }`}
               >
-                About
+                About Us
               </li>
               <li
                 onClick={() => handleLargeScreenMenuItemClick("services")}
-                className={`cursor-pointer ${
+                className={`cursor-pointer font-bold ${
                   page === "services" && "text-[#c02411]"
                 }`}
               >
@@ -124,7 +124,7 @@ const NavBar = (props) => {
               </li>
               <li
                 onClick={() => handleLargeScreenMenuItemClick("gallery")}
-                className={`cursor-pointer ${
+                className={`cursor-pointer font-bold ${
                   page === "gallery" && "text-[#c02411]"
                 }`}
               >
@@ -132,7 +132,7 @@ const NavBar = (props) => {
               </li>
               <li
                 onClick={() => handleLargeScreenMenuItemClick("faq")}
-                className={`cursor-pointer ${
+                className={`cursor-pointer font-bold ${
                   page === "faq" && "text-[#c02411]"
                 }`}
               >
@@ -140,11 +140,11 @@ const NavBar = (props) => {
               </li>
               <li
                 onClick={() => handleLargeScreenMenuItemClick("contact")}
-                className={`cursor-pointer ${
+                className={`cursor-pointer font-bold ${
                   page === "contact" && "text-[#c02411]"
                 }`}
               >
-                Contact
+                Contact Us
               </li>
             </ul>
           </div>
@@ -186,7 +186,7 @@ const NavBar = (props) => {
             <ul className="flex flex-col gap-3 items-center justify-evenly text-sm h-full w-full">
               <li
                 onClick={() => handleMenuItemClick("home")}
-                className={`nav-link cursor-pointer ${
+                className={`nav-link cursor-pointer font-bold ${
                   page === "home" && "text-[#c02411]"
                 }`}
               >
@@ -194,15 +194,15 @@ const NavBar = (props) => {
               </li>
               <li
                 onClick={() => handleMenuItemClick("about")}
-                className={`nav-link cursor-pointer ${
+                className={`nav-link cursor-pointer font-bold ${
                   page === "about" && "text-[#c02411]"
                 }`}
               >
-                About
+                About Us
               </li>
               <li
                 onClick={() => handleMenuItemClick("services")}
-                className={`nav-link cursor-pointer ${
+                className={`nav-link cursor-pointer font-bold ${
                   page === "services" && "text-[#c02411]"
                 }`}
               >
@@ -210,7 +210,7 @@ const NavBar = (props) => {
               </li>
               <li
                 onClick={() => handleMenuItemClick("gallery")}
-                className={`nav-link cursor-pointer ${
+                className={`nav-link cursor-pointer font-bold ${
                   page === "gallery" && "text-[#c02411]"
                 }`}
               >
@@ -218,7 +218,7 @@ const NavBar = (props) => {
               </li>
               <li
                 onClick={() => handleMenuItemClick("faq")}
-                className={`nav-link cursor-pointer ${
+                className={`nav-link cursor-pointer font-bold ${
                   page === "faq" && "text-[#c02411]"
                 }`}
               >
@@ -226,11 +226,11 @@ const NavBar = (props) => {
               </li>
               <li
                 onClick={() => handleMenuItemClick("contact")}
-                className={`nav-link cursor-pointer ${
+                className={`nav-link cursor-pointer font-bold ${
                   page === "contact" && "text-[#c02411]"
                 }`}
               >
-                Contact
+                Contact Us
               </li>
             </ul>
           </div>
