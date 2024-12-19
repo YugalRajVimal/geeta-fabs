@@ -41,8 +41,8 @@ const About = () => {
             {/* Text Section */}
             <div className="w-[60%] p-8 flex flex-col justify-center">
               <h1 className="text-4xl font-mono ">Welcome to Geeta Fabs</h1>
-              <p className="text-lg ">ABOUT OUR COMPANY</p>
-              <div className="flex flex-col gap-4 pt-6 pl-4 text-justify">
+              <p className="text-lg pl-2">ABOUT OUR COMPANY</p>
+              <div className="flex flex-col gap-4 pt-6 pl-2 text-justify">
                 <p>
                   Geeta Fabs is Delhi NCR based a large format digital fabric
                   printing studio & garment manufacturing hub, that supplies

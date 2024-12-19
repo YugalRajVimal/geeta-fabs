@@ -72,10 +72,10 @@ const CraftedToPerfection = () => {
         {/* Text and Description */}
         <div className="text-container w-[50%] h-full flex flex-col justify-evenly px-4">
           <div>
-            <h1 className="text-5xl italic">Textile Innovation</h1>
-            <h5 className="text-lg pl-4"> CRAFTED TO PERFECTION.</h5>
+            <h1 className="text-5xl italic pb-4">Textile Innovation</h1>
+            <h5 className="text-lg pl-2">CRAFTED TO PERFECTION.</h5>
           </div>
-         
+
           <div className="flex flex-col gap-2 pl-8 pt-4 text-justify">
             <p>
               At Geeta Fabs, we believe innovation is the cornerstone of
