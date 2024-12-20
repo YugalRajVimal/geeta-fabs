@@ -93,7 +93,7 @@ const NavBar = (props) => {
             <div className="flex justify-end item-center w-full pl-2">
               <span className="block flex items-center gap-1 pr-4 p-2">
                 <IoIosCall />
-                Phone No.+91 95801 91637
+                Phone No.+91 8595205465
               </span>
             </div>
             <div className="border border-black border-[0.2px] w-full"></div>

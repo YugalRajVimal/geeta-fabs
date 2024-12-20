@@ -7,8 +7,10 @@ const HomeCarousel = () => {
     "/home/gallery-06.jpg",
     "/home/Tropical-.webp",
     "/home/tropical-flower-pattern-vector-6331789.webp",
+    "/home/000001.jpeg",
+    "/home/000002.jpeg",
+    "/home/000002.jpeg"
   ];
-
   const [currentSlide, setCurrentSlide] = useState(0);
   const [nextSlide, setNextSlide] = useState(1);
   const currentSlideRef = useRef(null);
