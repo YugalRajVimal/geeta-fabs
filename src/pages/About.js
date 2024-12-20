@@ -28,9 +28,9 @@ const About = () => {
 
         {/* Content Section */}
         <div className="about-content">
-          <div className="flex px-10">
+          <div className="flex md:flex-row flex-col md:px-10">
             {/* Image Section */}
-            <div className="w-[40%] p-8 flex justify-center items-center">
+            <div className="md:w-[40%] w-full p-8 flex justify-center items-center">
               <img
                 src="/about/logo512.png"
                 className="h-full w-full object-contain"
@@ -39,20 +39,20 @@ const About = () => {
             </div>
 
             {/* Text Section */}
-            <div className="w-[60%] p-8 flex flex-col justify-center">
+            <div className="md:w-[60%] w-full p-8 flex flex-col justify-center">
               <h1 className="text-4xl font-mono ">Welcome to Geeta Fabs</h1>
               <p className="text-lg pl-2">ABOUT OUR COMPANY</p>
               <div className="flex flex-col gap-4 pt-6 pl-2 text-justify">
-                <p>
+                <p className="text-justify">
                   Geeta Fabs is Delhi NCR based a large format digital fabric
                   printing studio & garment manufacturing hub, that supplies
                   digital printed fabric and standard quality garments.
                 </p>
-                <p>
+                <p className="text-justify">
                   We focus on digitally printing your designs onto our tested
                   and approved fabrics.
                 </p>
-                <p>
+                <p className="text-justify">
                   We always use the latest digital technology for different
                   types of fabrics printing and custom colour matching done by
                   our well-experienced Designers team. Geeta Fabs specialises in
@@ -67,7 +67,7 @@ const About = () => {
           </div>
 
           {/* Additional Information Section */}
-          <div className="pr-[72px] pl-[88px] bg-white flex flex-col gap-4 pb-8 ">
+          <div className="md:pr-[72px] pr-[40px] pl-[40px]  md:pl-[88px] bg-white flex flex-col gap-4 pb-8 ">
             <p>
               We have latest technology textile printing machines to process
               high resolution printing results of fabric surpassing 1000 meters
@@ -106,12 +106,12 @@ const About = () => {
               support.
             </p>
           </div>
-          <div className="px-[72px] bg-white flex flex-col gap-4 pb-8">
+          <div className=" pl-10 pr-20 md:px-[72px] bg-white flex flex-col gap-4 pb-8 text-justify">
             <h1 className="text-2xl font-bold ">
               Our State-of-the-Art Infrastructure
             </h1>
-            <div className="pl-4 text-justify">
-              <p>
+            <div className="pl-4 text-justify flex flex-col gap-4">
+              <p className="">
                 At Geeta Fabs, we take pride in our modern infrastructure,
                 powered by a team of highly skilled technicians and designers.
                 Their expertise enables us to consistently deliver
@@ -121,7 +121,7 @@ const About = () => {
                 using specially coated paper subjected to precise heat and
                 pressure conditions.
               </p>
-              <p>
+              <p className="">
                 Equipped with the latest high-speed, imported multi-head Allwin
                 Printer machines, our facility boasts an impressive production
                 capacity of up to 2,000 meters per day. This robust setup allows
@@ -130,14 +130,14 @@ const About = () => {
                 measurements and cutting-edge manufacturing techniques, ensuring
                 the finest details are captured in every print.
               </p>
-              <p>
+              <p className="">
                 To align with global quality and environmental benchmarks, we
                 exclusively use eco-friendly, Azo-free, non-harmful Korean inks.
                 These inks are not only safe for the environment but also
                 deliver unmatched color vibrancy and durability, conforming to
                 international quality control standards.
               </p>
-              <p>
+              <p className="">
                 What truly sets Geeta Fabs apart is our unwavering commitment to
                 excellence. Every digital print we produce is crafted with
                 outstanding quality, sophisticated finishing, and competitive
@@ -147,9 +147,9 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="px-[72px] bg-white flex flex-col gap-4 pb-8">
+          <div className="pl-10 pr-20 md:px-[72px] bg-white flex flex-col gap-4 pb-8 text-justify">
             <h1 className="text-2xl font-bold ">Why Choose Us?</h1>
-            <p className="pl-4 text-justify">
+            <p className="pl-4 ">
               At Geeta Fabs, we are leaders in digital printing, textile and
               graphic design, product development, and production. Our mission
               is to deliver unparalleled quality, innovation, and customer

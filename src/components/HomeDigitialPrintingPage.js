@@ -56,14 +56,14 @@ const HomeDigitialPrintingPage = () => {
 
   return (
     <div
-      className="h-[100%] flex items-center justify-evenly bg-white relative px-10"
+      className="h-[130%] flex items-center  justify-evenly bg-white relative px-4 md:px-10 py-4"
     >
       <div
         id="digitalPrintingHome"
-        className="flex items-center justify-evenly w-full h-full"
+        className="flex flex-col md:flex-row gap-4 items-center justify-center md:justify-evenly w-full h-full"
       >
         {/* Image */}
-        <div className="image-container w-[35%] h-[80%] overflow-hidden">
+        <div className="image-container md:w-[35%] h-[40%] md:h-[80%] overflow-hidden">
           <img
             src="/home/abc.avif"
             alt="Digital Printing"
@@ -72,9 +72,9 @@ const HomeDigitialPrintingPage = () => {
         </div>
 
         {/* Text and Description */}
-        <div className="text-container w-[50%] h-full flex flex-col justify-evenly px-4">
+        <div className="text-container w-full md:w-[50%] h-[60%]  md:h-full flex flex-col  justify-start md:justify-evenly px-1 md:px-4 overflow-hidden overflow-y-auto ">
           <div>
-            <h1 className="text-5xl italic pb-4">
+            <h1 className="text-4xl md:text-5xl  italic pb-4">
               Digital Textile Printing
             </h1>
             <h5 className="text-lg">YOUR DESIGN OVER YOUR FABRIC</h5>
@@ -108,7 +108,7 @@ const HomeDigitialPrintingPage = () => {
           </div>
 
           {/* PNGs */}
-          <div className="certificates-container flex justify-between px-4">
+          <div className="certificates-container md:flex justify-between px-4 hidden ">
             <img
               src="/home/certification.webp"
               alt="Certification"
@@ -127,3 +127,6 @@ const HomeDigitialPrintingPage = () => {
 };
 
 export default HomeDigitialPrintingPage;
+
+
+

@@ -102,6 +102,8 @@ const Footer = ({ setPage }) => {
             <li className="flex gap-2 items-center">
               <IoCallOutline />
               <a href="tel:+918595205465">+91 8595205465</a>
+              ,
+              <a href="tel:+918595205465">+91 9580191637</a>
             </li>
             <li className="flex gap-2 items-center">
               <IoMailOutline />

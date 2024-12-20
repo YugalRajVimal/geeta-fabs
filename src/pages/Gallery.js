@@ -34,7 +34,7 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="-mt-[116px] h-[200%] bg-white">
+    <div className="-mt-[116px] h-[120%] md:h-[180%] bg-white">
       <div className="pt-[116px] h-1/2 px-10 flex flex-col gap-8 justify-center items-center">
         <h1 className="text-center text-5xl italic font-serif">Gallery</h1>
         <div
@@ -70,7 +70,7 @@ const Gallery = () => {
                 <img
                   src={`/gallery/${images[index]}.webp`}
                   alt={`Image ${index}`}
-                  className="h-[80%] aspect-[1/1] object-cover"
+                  className="h-[50%] sm:h-[60%] md:h-[80%] aspect-[1/1] object-cover"
                 />
               </motion.div>
             );
@@ -111,7 +111,7 @@ const Gallery = () => {
                 <img
                   src={`/gallery2/${images2[index]}.jpeg`}
                   alt={`Image ${index}`}
-                  className="h-[80%] aspect-[1/1] object-cover"
+                  className="h-[50%] sm:h-[60%] md:h-[80%] aspect-[1/1] object-cover"
                 />
               </motion.div>
             );

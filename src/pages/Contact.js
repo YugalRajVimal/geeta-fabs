@@ -32,7 +32,7 @@ const Contact = () => {
             <div className="flex flex-col md:flex-row justify-around mb-6">
               <div className="mb-4 md:mb-0">
                 <h5 className="text-xl font-semibold text-gray-800">Phone</h5>
-                <p className="text-gray-600">+91 8595205465</p>
+                <p className="text-gray-600">+91 8595205465 <br /> +91 9580191637</p>
               </div>
               <div>
                 <h5 className="text-xl font-semibold text-gray-800">Email</h5>

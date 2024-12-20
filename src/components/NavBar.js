@@ -72,18 +72,22 @@ const NavBar = (props) => {
 
   return (
     <>
-      <div className="relative h-[90px] bg-red-900 flex lg:flex-row flex-col justify-center lg:justify-between items-center text-white  w-full z-10 px-4 ">
+      <div className="relative h-[90px] bg-red-900 flex lg:flex-row flex-col justify-center lg:justify-between items-center text-white  w-full z-30 px-4 ">
         <div className="flex items-center gap-1">
           <IoMdMail />
-          info@geetafabs.com
+          <span className="pl-2">info@geetafabs.com</span>
+          
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center justify-center gap-1 px-4">
           <FaLocationDot />
-          Plot No-550, Udyog Vihar, Phase 5, Sector 19, Gurgaon
+          <div className="flex flex-wrap justify-center items-center w-auto pl-2">
+            <span>Plot No-550, Udyog Vihar, Phase 5, </span>
+            <span>Sector 19, Gurgaon</span>
+          </div>
         </div>
       </div>
-      <div className="relative h-[100px] shadow-md w-full z-10 px-4 lg:px-0">
-        <div className=" w-full h-full flex  justify-between items-center z-[20]">
+      <div className="relative h-[100px] shadow-md w-full z-40 px-4 lg:px-0">
+        <div className=" w-full h-full flex  justify-between items-center z-[40]">
           {/* Logo */}
           <div className=" flex-1 flex justify-start lg:justify-center text-xl lg:text-left">
             <img src="/home/logo.png" className="h-[40px]" alt="Logo" />
@@ -93,7 +97,7 @@ const NavBar = (props) => {
             <div className="flex justify-end item-center w-full pl-2">
               <span className="block flex items-center gap-1 pr-4 p-2">
                 <IoIosCall />
-                Phone No.+91 8595205465
+                Phone No.+91 8595205465 , +91 9580191637
               </span>
             </div>
             <div className="border border-black border-[0.2px] w-full"></div>
@@ -182,8 +186,8 @@ const NavBar = (props) => {
 
         {/* Nav Items for small screens */}
         {menuOpen && (
-          <div className="menu-container absolute top-[100%] pb-[216px] pt-[100px] w-full bg-zinc-100 z-10 flex flex-col justify-center items-center">
-            <ul className="flex flex-col gap-3 items-center justify-evenly text-sm h-full w-full">
+          <div className="menu-container absolute top-[100%] left-0 pb-[316px] pt-[100px] w-full bg-zinc-100  flex flex-col justify-center items-center">
+            <ul className="flex flex-col gap-10 items-center justify-evenly text-sm  w-full">
               <li
                 onClick={() => handleMenuItemClick("home")}
                 className={`nav-link cursor-pointer font-bold ${
