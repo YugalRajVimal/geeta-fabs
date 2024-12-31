@@ -145,7 +145,8 @@ import GarmentManufacturing from "../components/GarmentManufacturing";
 import CraftedToPerfection from "../components/CraftedToPerfection";
 import ProductsAndApplications from "./ProductsAndApplications";
 
-const LandingPage = () => {
+const LandingPage = (props) => {
+  const { page, setPage } = props;
   return (
     <>
       <HomeCorousel />
