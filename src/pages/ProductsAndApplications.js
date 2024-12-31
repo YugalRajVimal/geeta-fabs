@@ -39,6 +39,41 @@ const ProductsAndApplications = (props) => {
       id: "activeWears",
       name: "Active Wears",
     },
+    {
+      image: "/ProductsAndApplications/ActiveWears/000001.webp",
+      id: "beachWear",
+      name: "Beach Wear",
+    },
+    {
+      image: "/ProductsAndApplications/ActiveWears/000001.webp",
+      id: "fabricPrinting",
+      name: "Fabric Printing",
+    },
+    {
+      image: "/ProductsAndApplications/ActiveWears/000001.webp",
+      id: "fashionGarments",
+      name: "Fashion Garments",
+    },
+    {
+      image: "/ProductsAndApplications/ActiveWears/000001.webp",
+      id: "homeFurnishing",
+      name: "Home Furnishing",
+    },
+    {
+      image: "/ProductsAndApplications/ActiveWears/000001.webp",
+      id: "rollToRollPrinting",
+      name: "Roll To Roll Printing",
+    },
+    {
+      image: "/ProductsAndApplications/ActiveWears/000001.webp",
+      id: "sareesAndSuits",
+      name: "Sarees / Suits",
+    },
+    {
+      image: "/ProductsAndApplications/ActiveWears/000001.webp",
+      id: "scarfs",
+      name: "Scarfs",
+    },
   ];
 
   const handlePageChange = (pageName) => {

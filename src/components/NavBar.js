@@ -436,6 +436,69 @@ const NavBar = (props) => {
                     >
                       Digital Printing Bags
                     </li>
+                    <li
+                      onClick={(e) => (
+                        e.stopPropagation(),
+                        handleLargeScreenMenuItemClick("beachWear")
+                      )}
+                      className="px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                    >
+                      Beach Wear
+                    </li>
+                    <li
+                      onClick={(e) => (
+                        e.stopPropagation(),
+                        handleLargeScreenMenuItemClick("fabricPrinting")
+                      )}
+                      className="px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                    >
+                      Fabric Printing
+                    </li>
+                    <li
+                      onClick={(e) => (
+                        e.stopPropagation(),
+                        handleLargeScreenMenuItemClick("fashionGarments")
+                      )}
+                      className="px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                    >
+                      Fashion Garments
+                    </li>
+                    <li
+                      onClick={(e) => (
+                        e.stopPropagation(),
+                        handleLargeScreenMenuItemClick("homeFurnishing")
+                      )}
+                      className="px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                    >
+                      Home Furnishing
+                    </li>
+                    <li
+                      onClick={(e) => (
+                        e.stopPropagation(),
+                        handleLargeScreenMenuItemClick("rollToRollPrinting")
+                      )}
+                      className="px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                    >
+                      Roll To Roll Printing
+                    </li>
+                    <li
+                      onClick={(e) => (
+                        e.stopPropagation(),
+                        handleLargeScreenMenuItemClick("sareesAndSuits")
+                      )}
+                      className="px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                    >
+                      Sarees / Suits
+                    </li>
+                    <li
+                      onClick={(e) => (
+                        e.stopPropagation(),
+                        handleLargeScreenMenuItemClick("scarfs")
+                      )}
+                      className="px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                    >
+                      Scarfs
+                    </li>
                   </ul>
                 )}
               </li>
@@ -542,6 +605,49 @@ const NavBar = (props) => {
                     className="cursor-pointer font-bold text-xl"
                   >
                     Digital Printing Bags
+                  </li>
+                  <li
+                    onClick={() => handleMenuItemClick("beachWear")}
+                    className="cursor-pointer font-bold text-xl"
+                  >
+                    Beach Wear
+                  </li>
+                  <li
+                    onClick={() => handleMenuItemClick("fabricPrinting")}
+                    className="cursor-pointer font-bold text-xl"
+                  >
+                    Fabric Printing
+                  </li>
+                  
+                  <li
+                    onClick={() => handleMenuItemClick("fashionGarments")}
+                    className="cursor-pointer font-bold text-xl"
+                  >
+                    Fashion Garments
+                  </li>
+                  <li
+                    onClick={() => handleMenuItemClick("homeFurnishing")}
+                    className="cursor-pointer font-bold text-xl"
+                  >
+                    Home Furnishing
+                  </li>
+                  <li
+                    onClick={() => handleMenuItemClick("rollToRollPrinting")}
+                    className="cursor-pointer font-bold text-xl"
+                  >
+                    Roll To Roll Printing
+                  </li>
+                  <li
+                    onClick={() => handleMenuItemClick("sareesAndSuits")}
+                    className="cursor-pointer font-bold text-xl"
+                  >
+                    Sarees / Suits
+                  </li>
+                  <li
+                    onClick={() => handleMenuItemClick("scarfs")}
+                    className="cursor-pointer font-bold text-xl"
+                  >
+                    Scarfs
                   </li>
                 </ul>
               </li>

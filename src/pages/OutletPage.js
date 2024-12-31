@@ -191,6 +191,337 @@ const OutletPage = () => {
       images: [],
       banner: "/banner.webp",
     },
+    {
+      id: "beachWear",
+      name: "Beach Wear",
+      description: (
+        <>
+          <p>
+            At Geeta Fabs, we specialize in providing customized and
+            personalized digital printing solutions with no minimum order
+            requirements. Our advanced printing techniques ensure vibrant and
+            unparalleled colors on polyester fabrics tailored to your specific
+            needs and requirements. Whether you're designing for personal use,
+            promotional merchandise, or a product line, we make it easy to bring
+            your creative ideas to life.
+          </p>
+          <p>
+            All our services are handled entirely in-house, from initial
+            printing to sublimation and thorough final quality checks. This
+            complete control over the production process allows us to ensure
+            consistent results and guarantee the best quality possible. Our
+            streamlined processes and dedication to craftsmanship ensure that
+            every product meets the highest standards of durability and visual
+            appeal.
+          </p>
+          <p>
+            Whether you’re looking to create unique designs, explore new ideas,
+            or enhance your brand identity, Geeta Fabs is your trusted partner
+            for high-quality digital printing. We’re here to turn your
+            imagination into reality with reliable, efficient, and top-notch
+            services.
+          </p>
+        </>
+      ),
+      applicationText:
+        "We focus on Sublimation Digital Printing on any polyester fabrics:",
+      applications: [
+        "Jacquards",
+        "Crepe",
+        "Dupioni Silk",
+        "Georgette",
+        "Waffle",
+        "Satin",
+        "Poly-Knits",
+        "Taffeta",
+        "Micro Twill",
+        "Etc",
+      ],
+      images: [],
+      banner: "/banner.webp",
+    },
+    {
+      id: "fabricPrinting",
+      name: "Fabric Printing",
+      description: (
+        <>
+          <p>
+            At Geeta Fabs, we specialize in fabric banner and flag printing that
+            can be fully customized and personalized to meet your specific
+            needs. Our banners are crafted from soft, textured materials that
+            not only look beautiful when displayed but are also highly durable
+            for extended use. These fabric banners are ideal for a wide range of
+            indoor events such as trade shows, in-store displays, birthdays,
+            gatherings, and much more.
+          </p>
+          <p>
+            Our advanced printing techniques ensure vibrant, unparalleled colors
+            on polyester fabrics, providing exceptional quality and versatility.
+            Whether you require intricate designs or bold statements, our
+            printing solutions bring your vision to life with precision and
+            clarity. All our services are managed entirely in-house, from
+            printing and sublimation to final quality checks. This allows us to
+            maintain complete control over the production process and
+            consistently deliver products of the highest standards.
+          </p>
+          <p>
+            Perfect for both personal and professional use, our fabric banners
+            combine elegance with durability, ensuring they make a lasting
+            impression. At Geeta Fabs, we are committed to turning your creative
+            ideas into high-quality banners that stand out. Get in touch with us
+            today for exceptional service and results.
+          </p>
+        </>
+      ),
+      applicationText:
+        "We focus on Sublimation Digital Printing on any polyester fabrics:",
+      applications: [
+        "Jacquards",
+        "Crepe",
+        "Dupioni Silk",
+        "Georgette",
+        "Waffle",
+        "Satin",
+        "Poly-Knits",
+        "Taffeta",
+        "Micro Twill",
+        "Etc",
+      ],
+      images: [],
+      banner: "/banner.webp",
+    },
+    {
+      id: "fashionGarments",
+      name: "Fashion Garments",
+      description: (
+        <>
+          <p>
+            At Geeta Fabs, we offer customized and personalized digital printing
+            solutions with no minimum order requirements. Our highly versatile
+            printing techniques ensure vibrant and unparalleled colors on any
+            polyester fabric to meet your unique needs and requirements.
+            Leveraging our expertise in digital printing, we proudly provide an
+            exceptional range of Designer Digital Printed Fabrics, perfect for
+            dresses, kaftans, tops, and more.
+          </p>
+          <p>
+            All our services are handled entirely in-house, from printing and
+            sublimation to final quality checks. This integrated approach allows
+            us to maintain complete control over the production process and
+            deliver consistent, high-quality results every time. Whether you’re
+            creating bespoke fashion pieces or sourcing materials for a new
+            collection, Geeta Fabs guarantees unparalleled craftsmanship and
+            attention to detail.
+          </p>
+          <p>
+            Let Geeta Fabs bring your creative ideas to life with our top-notch
+            digital printing services. For any queries or feedback, feel free to
+            get in touch with us today.
+          </p>
+        </>
+      ),
+      applicationText:
+        "We focus on Sublimation Digital Printing on any polyester fabrics:",
+      applications: [
+        "Jacquards",
+        "Crepe",
+        "Dupioni Silk",
+        "Georgette",
+        "Waffle",
+        "Satin",
+        "Poly-Knits",
+        "Taffeta",
+        "Micro Twill",
+        "Etc",
+      ],
+      images: [],
+      banner: "/banner.webp",
+    },
+    {
+      id: "homeFurnishing",
+      name: "Home Furnishing",
+      description: (
+        <>
+          <p>
+            At Geeta Fabs, we offer customized and personalized digital printing
+            solutions with no minimum order requirements. Our highly versatile
+            printing techniques ensure vibrant and unparalleled colors on any
+            polyester fabric to meet your unique needs and requirements.
+            Leveraging our expertise in digital printing, we proudly provide an
+            exceptional range of Designer Digital Printed Fabrics, perfect for
+            dresses, kaftans, tops, and more.
+          </p>
+          <p>
+            All our services are handled entirely in-house, from printing and
+            sublimation to final quality checks. This integrated approach allows
+            us to maintain complete control over the production process and
+            deliver consistent, high-quality results every time. Whether you’re
+            creating bespoke fashion pieces or sourcing materials for a new
+            collection, Geeta Fabs guarantees unparalleled craftsmanship and
+            attention to detail.
+          </p>
+          <p>
+            Let Geeta Fabs bring your creative ideas to life with our top-notch
+            digital printing services. For any queries or feedback, feel free to
+            get in touch with us today.
+          </p>
+        </>
+      ),
+      applicationText:
+        "We focus on Sublimation Digital Printing on any polyester fabrics:",
+      applications: [
+        "Jacquards",
+        "Crepe",
+        "Dupioni Silk",
+        "Georgette",
+        "Waffle",
+        "Satin",
+        "Poly-Knits",
+        "Taffeta",
+        "Micro Twill",
+        "Etc",
+      ],
+      images: [],
+      banner: "/banner.webp",
+    },
+    {
+      id: "rollToRollPrinting",
+      name: "Roll To Roll Printing",
+      description: (
+        <>
+          <p>
+            At Geeta Fabs, we offer customized and personalized digital
+            roll-to-roll printing solutions with a maximum width of 70 inches on
+            any required polyester fabric. Our seamless design patterns enable
+            printing at any length without difficulty, making it an ideal
+            solution for a variety of creative and commercial applications.
+          </p>
+          <p>
+            Our highly versatile printing techniques ensure vibrant and
+            unparalleled colors on polyester fabrics, tailored to meet your
+            unique needs and requirements. With all services managed entirely
+            in-house, from printing and sublimation to final quality checks, we
+            maintain complete control over the entire production process. This
+            allows us to guarantee consistent, high-quality results every time.
+          </p>
+          <p>
+            Whether you need fabrics for fashion, interiors, or promotional
+            purposes, Geeta Fabs delivers exceptional craftsmanship and
+            attention to detail. Let us transform your ideas into stunning
+            designs with our cutting-edge digital roll-to-roll printing
+            technology. For any queries or feedback, feel free to get in touch
+            with us today.
+          </p>
+        </>
+      ),
+      applicationText:
+        "We focus on Sublimation Digital Printing on any polyester fabrics:",
+      applications: [
+        "Jacquards",
+        "Crepe",
+        "Dupioni Silk",
+        "Georgette",
+        "Waffle",
+        "Satin",
+        "Poly-Knits",
+        "Taffeta",
+        "Micro Twill",
+        "Etc",
+      ],
+      images: [],
+      banner: "/banner.webp",
+    },
+    {
+      id: "sareesAndSuits",
+      name: "Sarees / Suits",
+      description: (
+        <>
+          <p>
+            At Geeta Fabs, we specialize in customized and personalized digital
+            printing on sarees and suits, with no minimum order requirements.
+            Our digital printed dupattas add a vibrant touch to any outfit,
+            elevating your look for every occasion. With highly versatile
+            printing techniques and unmatched color vibrancy, we create stunning
+            designs on polyester fabrics, perfect for digital floral printed
+            sarees or contemporary designer suits suitable for daily wear,
+            parties, and traditional events.
+          </p>
+          <p>
+            All our services are managed entirely in-house, from printing and
+            sublimation to thorough quality checks. This integrated approach
+            allows us to maintain complete control over the production process,
+            ensuring consistently high-quality results. At Geeta Fabs, we are
+            dedicated to turning your creative ideas into beautifully crafted
+            sarees, suits, and dupattas that stand out.
+          </p>
+          <p>
+            For any comments or feedback, please feel free to get in touch with
+            us.
+          </p>
+        </>
+      ),
+      applicationText:
+        "We focus on Sublimation Digital Printing on any polyester fabrics:",
+      applications: [
+        "Jacquards",
+        "Crepe",
+        "Dupioni Silk",
+        "Georgette",
+        "Waffle",
+        "Satin",
+        "Poly-Knits",
+        "Taffeta",
+        "Micro Twill",
+        "Etc",
+      ],
+      images: [],
+      banner: "/banner.webp",
+    },
+    {
+      id: "scarfs",
+      name: "Scarfs",
+      description: (
+        <>
+          <p>
+            At Geeta Fabs, we offer customized and personalized digital printing
+            on scarves, stoles, pocket squares, and more, with no minimum order
+            requirements. Our advanced and versatile printing techniques ensure
+            vibrant and unparalleled colors on any polyester fabric, making it
+            easy to translate your artwork onto stylish accessories. Whether
+            you're looking to create a unique product line or elevate your
+            brand, our design labs make the process seamless and efficient.
+          </p>
+          <p>
+            All our services are handled entirely in-house, from printing and
+            sublimation to meticulous quality checks. This hands-on approach
+            enables us to maintain full control over the production process,
+            guaranteeing exceptional quality every time. At Geeta Fabs, we are
+            committed to transforming your creative visions into beautifully
+            crafted scarves, stoles, and pocket squares that make a statement.
+          </p>
+          <p>
+            For any comments or feedback, please feel free to get in touch with
+            us.
+          </p>
+        </>
+      ),
+      applicationText:
+        "We focus on Sublimation Digital Printing on any polyester fabrics:",
+      applications: [
+        "Jacquards",
+        "Crepe",
+        "Dupioni Silk",
+        "Georgette",
+        "Waffle",
+        "Satin",
+        "Poly-Knits",
+        "Taffeta",
+        "Micro Twill",
+        "Etc",
+      ],
+      images: [],
+      banner: "/banner.webp",
+    },
   ];
 
   return (
@@ -227,6 +558,85 @@ const OutletPage = () => {
           applications={productsAndApplicationDetails[1].applications}
           images={productsAndApplicationDetails[1].images}
           banner={productsAndApplicationDetails[1].banner}
+        />
+      )}
+
+      {page == productsAndApplicationDetails[2].id && (
+        <ProductsAndApplicationsPageTemplate
+          page={productsAndApplicationDetails[2].id}
+          pageName={productsAndApplicationDetails[2].name}
+          description={productsAndApplicationDetails[2].description}
+          applicationText={productsAndApplicationDetails[2].applicationText}
+          applications={productsAndApplicationDetails[2].applications}
+          images={productsAndApplicationDetails[2].images}
+          banner={productsAndApplicationDetails[2].banner}
+        />
+      )}
+      {page == productsAndApplicationDetails[3].id && (
+        <ProductsAndApplicationsPageTemplate
+          page={productsAndApplicationDetails[3].id}
+          pageName={productsAndApplicationDetails[3].name}
+          description={productsAndApplicationDetails[3].description}
+          applicationText={productsAndApplicationDetails[3].applicationText}
+          applications={productsAndApplicationDetails[3].applications}
+          images={productsAndApplicationDetails[3].images}
+          banner={productsAndApplicationDetails[3].banner}
+        />
+      )}
+
+      {page == productsAndApplicationDetails[4].id && (
+        <ProductsAndApplicationsPageTemplate
+          page={productsAndApplicationDetails[4].id}
+          pageName={productsAndApplicationDetails[4].name}
+          description={productsAndApplicationDetails[4].description}
+          applicationText={productsAndApplicationDetails[4].applicationText}
+          applications={productsAndApplicationDetails[4].applications}
+          images={productsAndApplicationDetails[4].images}
+          banner={productsAndApplicationDetails[4].banner}
+        />
+      )}
+      {page == productsAndApplicationDetails[5].id && (
+        <ProductsAndApplicationsPageTemplate
+          page={productsAndApplicationDetails[5].id}
+          pageName={productsAndApplicationDetails[5].name}
+          description={productsAndApplicationDetails[5].description}
+          applicationText={productsAndApplicationDetails[5].applicationText}
+          applications={productsAndApplicationDetails[5].applications}
+          images={productsAndApplicationDetails[5].images}
+          banner={productsAndApplicationDetails[5].banner}
+        />
+      )}
+      {page == productsAndApplicationDetails[6].id && (
+        <ProductsAndApplicationsPageTemplate
+          page={productsAndApplicationDetails[6].id}
+          pageName={productsAndApplicationDetails[6].name}
+          description={productsAndApplicationDetails[6].description}
+          applicationText={productsAndApplicationDetails[6].applicationText}
+          applications={productsAndApplicationDetails[6].applications}
+          images={productsAndApplicationDetails[6].images}
+          banner={productsAndApplicationDetails[6].banner}
+        />
+      )}
+      {page == productsAndApplicationDetails[7].id && (
+        <ProductsAndApplicationsPageTemplate
+          page={productsAndApplicationDetails[7].id}
+          pageName={productsAndApplicationDetails[7].name}
+          description={productsAndApplicationDetails[7].description}
+          applicationText={productsAndApplicationDetails[7].applicationText}
+          applications={productsAndApplicationDetails[7].applications}
+          images={productsAndApplicationDetails[7].images}
+          banner={productsAndApplicationDetails[7].banner}
+        />
+      )}
+      {page == productsAndApplicationDetails[8].id && (
+        <ProductsAndApplicationsPageTemplate
+          page={productsAndApplicationDetails[8].id}
+          pageName={productsAndApplicationDetails[8].name}
+          description={productsAndApplicationDetails[8].description}
+          applicationText={productsAndApplicationDetails[8].applicationText}
+          applications={productsAndApplicationDetails[8].applications}
+          images={productsAndApplicationDetails[8].images}
+          banner={productsAndApplicationDetails[8].banner}
         />
       )}
 
