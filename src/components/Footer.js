@@ -133,13 +133,6 @@ const Footer = ({ setPage }) => {
             <p>Always ready to help</p>
           </div>
         </div>
-        <div className="flex items-center mb-6 lg:mb-0 lg:w-1/3">
-          <FaRegMoneyBillAlt className="text-3xl text-[#c02411]" />
-          <div className="pl-4">
-            <h1 className="text-xl font-bold">100% Moneyback</h1>
-            <p>Guaranteed refund policy</p>
-          </div>
-        </div>
       </div>
 
       {/* Navigation Links */}
