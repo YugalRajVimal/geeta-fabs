@@ -31,11 +31,11 @@ const ProductsAndApplications = (props) => {
   const ProductsAndApplicationPageDetail = [
     {
       image: "/home/gallery-06.jpg",
-      id: "bags",
-      name: "Bags",
+      id: "digitalPrintingBags",
+      name: "Digital Printing Bags",
     },
     {
-      image: "/home/gallery-06.jpg",
+      image: "/ProductsAndApplications/ActiveWears/000001.webp",
       id: "activeWears",
       name: "Active Wears",
     },

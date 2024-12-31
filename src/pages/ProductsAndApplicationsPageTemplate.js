@@ -2,19 +2,22 @@ import React from "react";
 import { GoArrowRight } from "react-icons/go";
 
 const ProductsAndApplicationsPageTemplate = (props) => {
-  const { pageName, description, applicationText, applications, images } =
+  const { pageName, description, applicationText, applications, images, banner } =
     props;
 
   return (
-    <div className=" bg-gray-50 py-10 font-mono">
+    <div className=" bg-gray-50 pb-10 font-mono">
+        <div className="h-[150px]">
+            <img src={banner} className="h-full w-full object-cover" />
+        </div>
       <div className="py-4 text-center">
         <h1 className="text-4xl font-serif text-gray-900">{pageName}</h1>
       </div>
 
       <div className="flex gap-8 w-full justify-center px-6">
         {/* Left Section: Description */}
-        <div className="w-[50%]  p-6 rounded-lg ">
-          <div className="text-lg text-gray-700 border-l-[4px] border border-black border-y-0 border-r-0 pl-4">{description}</div>
+        <div className="w-[60%]  p-6 rounded-lg ">
+          <div className="text-lg text-gray-700 border-l-[4px] border border-black border-y-0 border-r-0 pl-4 flex flex-col gap-4">{description}</div>
           {/* Images */}
           <div className="mt-6 flex flex-wrap gap-4 justify-center items-center">
             {images && images?.map((img, index) => (

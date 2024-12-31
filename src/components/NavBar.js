@@ -359,7 +359,7 @@ const NavBar = (props) => {
           </div>
         </div>
       </div>
-      <div className="relative h-[100px] shadow-md w-full z-40 px-4 lg:px-0">
+      <div className="relative h-[100px] shadow-md w-full z-40 px-4 lg:px-0 sticky top-0 bg-white">
         <div className=" w-full h-full flex  justify-between items-center z-[40]">
           <div className=" flex-1 flex gap-2 justify-start lg:justify-center items-center text-xl lg:text-left">
             <img src="/home/logo.png" className="h-[60px] px-1" alt="Logo" />
@@ -430,11 +430,11 @@ const NavBar = (props) => {
                     <li
                       onClick={(e) => (
                         e.stopPropagation(),
-                        handleLargeScreenMenuItemClick("bags")
+                        handleLargeScreenMenuItemClick("digitalPrintingBags")
                       )}
                       className="px-4 py-2 hover:bg-gray-200 cursor-pointer"
                     >
-                      Bags
+                      Digital Printing Bags
                     </li>
                   </ul>
                 )}
@@ -538,22 +538,10 @@ const NavBar = (props) => {
                     Active Wears
                   </li>
                   <li
-                    onClick={() => handleMenuItemClick("bags")}
+                    onClick={() => handleMenuItemClick("digitalPrintingBags")}
                     className="cursor-pointer font-bold text-xl"
                   >
-                    Bags
-                  </li>
-                  <li
-                    onClick={() => handleMenuItemClick("beachWears")}
-                    className="cursor-pointer font-bold text-xl"
-                  >
-                    Beach Wears
-                  </li>
-                  <li
-                    onClick={() => handleMenuItemClick("fashionGarments")}
-                    className="cursor-pointer font-bold text-xl"
-                  >
-                    Fashion Garments
+                    Digital Printing Bags
                   </li>
                 </ul>
               </li>

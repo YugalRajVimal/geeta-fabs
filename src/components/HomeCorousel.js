@@ -76,7 +76,6 @@
 //     ).to(slideRefs.current[nextSlide], { x: "0%", duration: 1 }, 0);
 //   };
 
-
 //   const nextImage = () => {
 //     slideTo("next");
 //   };
@@ -114,7 +113,6 @@
 //                 }}
 //               />
 //             ))}
-            
 
 //             <div
 //               className="absolute z-[20] left-5 top-1/2 transform -translate-y-1/2 text-3xl cursor-pointer"
@@ -213,8 +211,8 @@ const HomeCarousel = () => {
         // Add animation for text to move from bottom to top
         gsap.fromTo(
           "#imageText",
-          { opacity: 0, y: 50 }, // Start from the bottom (y: 50)
-          { opacity: 1, y: 0, duration: 1 } // Animate to normal position
+          { opacity: 0, y: "120px" }, // Start from the bottom (y: 50)
+          { opacity: 1, y: "90px", duration: 1 } // Animate to normal position
         );
       },
     });
@@ -251,9 +249,9 @@ const HomeCarousel = () => {
 
   return (
     <div className="flex h-[110%] w-[100%] justify-center -mt-24">
-      <div id="carousel" className="relative w-full  h-full p-8 pt-32">
+      <div id="carousel" className="relative w-full  h-full pt-24">
         <div className="relative flex items-center gap-8 h-full">
-          <div className="relative w-full h-full overflow-hidden rounded-3xl shadow-md shadow-black flex items-center">
+          <div className="relative w-full h-full overflow-hidden  shadow-md shadow-black flex items-center">
             {images.map((image, index) => (
               <img
                 key={index}
@@ -284,7 +282,7 @@ const HomeCarousel = () => {
             </div>
             <div
               id="imageText"
-              className="absolute bottom-8 z-[20] w-full md:w-auto left-0  md:left-8  bg-white text-black py-2 px-6 rounded-sm shadow-lg"
+              className="absolute bottom-1/2 -translate-y-1/2  z-[20] w-full md:w-auto left-0  md:left-16  bg-white text-black py-2 px-6 rounded-sm shadow-lg"
               ref={(el) => (textRefs.current[currentSlide] = el)}
             >
               <h2 className="text-3xl font-bold mb-2 text-[#7f152f]">
@@ -300,4 +298,3 @@ const HomeCarousel = () => {
 };
 
 export default HomeCarousel;
-
