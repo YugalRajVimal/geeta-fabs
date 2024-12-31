@@ -68,48 +68,7 @@ const OutletPage = () => {
             ensures that designs do not fade or peel, even after multiple
             washes, making our activewear perfect for long-term use.
           </p>
-          <p>
-            Our offerings go beyond just printing. We pride ourselves on being a
-            one-stop solution for all your activewear customization needs. From
-            initial design consultation to the final quality check, every step
-            of the process is meticulously managed by our in-house team. This
-            vertical integration allows us to maintain strict quality control
-            and deliver consistent results that exceed customer expectations.
-            Our rigorous quality checks ensure that every piece leaving our
-            facility meets the highest industry standards, giving you confidence
-            in the durability and performance of your products.
-          </p>
-          <p>
-            Creativity is at the heart of our business, and we strive to empower
-            our clients to express their individuality through their designs.
-            Whether it’s a bold pattern for a yoga crop top, a minimalist logo
-            for a classic T-shirt, or intricate artwork for a pair of leggings,
-            we provide the tools and expertise to bring your ideas to life. Our
-            design team works closely with you to ensure your vision is
-            accurately translated into wearable art. With our wide range of
-            customization options, you can create activewear that perfectly
-            reflects your brand identity or personal style.
-          </p>
-          <p>
-            Timely delivery is another hallmark of our services. We understand
-            the importance of meeting deadlines, especially for businesses
-            operating in competitive markets. Our efficient production processes
-            and dedicated logistics team ensure that your orders are completed
-            and delivered on time, every time. This reliability has earned us
-            the trust of a growing clientele who value both quality and
-            punctuality in their activewear suppliers.
-          </p>
-          <p>
-            At Geeta Fabs, we take pride in our ability to transform your vision
-            into exceptional, wear-resistant activewear that performs as great
-            as it looks. Whether you’re designing for sports enthusiasts,
-            fitness lovers, or everyday comfort, our expertise and dedication
-            ensure that your products stand out in both style and functionality.
-            Trust us to deliver activewear solutions that exceed your
-            expectations and set you apart in the market. With Geeta Fabs, the
-            possibilities for creative and high-performance activewear are truly
-            limitless.
-          </p>
+          
         </>
       ),
       applicationText:
