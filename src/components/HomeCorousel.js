@@ -251,7 +251,7 @@ const HomeCarousel = () => {
 
   return (
     <div className="flex h-[110%] w-[100%] justify-center -mt-24">
-      <div id="carousel" className="relative w-full xl:w-[90%] 2xl:w-[80%] h-full p-8 pt-32">
+      <div id="carousel" className="relative w-full  h-full p-8 pt-32">
         <div className="relative flex items-center gap-8 h-full">
           <div className="relative w-full h-full overflow-hidden rounded-3xl shadow-md shadow-black flex items-center">
             {images.map((image, index) => (
@@ -259,7 +259,7 @@ const HomeCarousel = () => {
                 key={index}
                 src={image}
                 ref={(el) => (slideRefs.current[index] = el)}
-                className={`h-full w-full object-cover absolute ${
+                className={`h-full w-full  absolute ${
                   index === currentSlide ? "z-10" : "z-0"
                 }`}
                 style={{
