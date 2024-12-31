@@ -146,20 +146,15 @@ import CraftedToPerfection from "../components/CraftedToPerfection";
 import ProductsAndApplications from "./ProductsAndApplications";
 
 const LandingPage = () => {
-  
-
   return (
     <>
       <HomeCorousel />
       <HomeDigitialPrintingPage />
       <GarmentManufacturing />
       <CraftedToPerfection />
-      <ProductsAndApplications />
-      
+      <ProductsAndApplications page={page} setPage={setPage} />
     </>
   );
 };
 
 export default LandingPage;
-
-

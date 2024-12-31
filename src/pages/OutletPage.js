@@ -75,7 +75,7 @@ const OutletPage = () => {
   return (
     <div className="overflow-y-auto overflow-x-hidden h-screen  z-[10]">
       <NavBar page={page} setPage={setPage} />
-      {page == "home" && <LandingPage />}
+      {page == "home" && <LandingPage page={page} setPage={setPage}/>}
       {page == "about" && <About />}
       {page == "services" && <Services />}
       {page == "gallery" && <Gallery />}
