@@ -55,17 +55,15 @@ const HomeDigitialPrintingPage = () => {
   }, []);
 
   return (
-    <div
-      className="h-[130%] flex items-center  justify-evenly bg-white relative px-4 md:px-10 py-4"
-    >
+    <div className="h-[130%] flex items-center  justify-evenly bg-white relative px-4 md:px-10 py-4">
       <div
         id="digitalPrintingHome"
         className="flex flex-col md:flex-row gap-4 items-center justify-center md:justify-evenly w-full h-full"
       >
         {/* Image */}
-        <div className="image-container md:w-[35%] h-[40%] md:h-[80%] overflow-hidden">
+        <div className="image-container flex justify-center items-center md:w-[35%] h-[40%] md:h-[70%] overflow-hidden ">
           <img
-            src="/home/abc.avif"
+            src="/home/digitalPrinting.jpeg"
             alt="Digital Printing"
             className="h-full object-contain"
           />
@@ -74,10 +72,12 @@ const HomeDigitialPrintingPage = () => {
         {/* Text and Description */}
         <div className="text-container w-full md:w-[50%] h-[60%]  md:h-full flex flex-col  justify-start md:justify-evenly px-1 md:px-4 overflow-hidden overflow-y-auto ">
           <div>
-            <h1 className="text-4xl md:text-5xl  italic pb-4">
+            <h1 className="text-4xl md:text-5xl  italic pb-4 text-[#7f152f]">
               Digital Textile Printing
             </h1>
-            <h5 className="text-lg">YOUR DESIGN OVER YOUR FABRIC</h5>
+            <h5 className="text-lg font-semibold">
+              YOUR DESIGN OVER YOUR FABRIC
+            </h5>
           </div>
           <div className="flex flex-col gap-2 pl-4 text-justify">
             <p>
@@ -127,6 +127,3 @@ const HomeDigitialPrintingPage = () => {
 };
 
 export default HomeDigitialPrintingPage;
-
-
-
