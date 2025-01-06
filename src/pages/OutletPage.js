@@ -68,7 +68,6 @@ const OutletPage = () => {
             ensures that designs do not fade or peel, even after multiple
             washes, making our activewear perfect for long-term use.
           </p>
-          
         </>
       ),
       applicationText:
@@ -147,8 +146,12 @@ const OutletPage = () => {
         "Micro Twill",
         "Etc",
       ],
-      images: [],
-      banner: "/banner.webp",
+      images: [
+        "/ProductsAndApplications/DigitalPrintingBags/000002.jpeg",
+        "/ProductsAndApplications/DigitalPrintingBags/000003.jpeg",
+        "/ProductsAndApplications/DigitalPrintingBags/000004.jpeg",
+      ],
+      banner: "/ProductsAndApplications/DigitalPrintingBags/000001.jpeg",
     },
     {
       id: "beachWear",
@@ -196,8 +199,8 @@ const OutletPage = () => {
         "Micro Twill",
         "Etc",
       ],
-      images: [],
-      banner: "/banner.webp",
+      images: ["/ProductsAndApplications/BeachWear/000001.jpeg"],
+      banner: "/ProductsAndApplications/BeachWear/000001.jpeg",
     },
     {
       id: "fabricPrinting",
@@ -246,8 +249,11 @@ const OutletPage = () => {
         "Micro Twill",
         "Etc",
       ],
-      images: [],
-      banner: "/banner.webp",
+      images: [
+        "/ProductsAndApplications/FabricPrinting/000002.jpeg",
+        "/ProductsAndApplications/FabricPrinting/000001.webp",
+      ],
+      banner: "/ProductsAndApplications/FabricPrinting/000002.jpeg",
     },
     {
       id: "fashionGarments",

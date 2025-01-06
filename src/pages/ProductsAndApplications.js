@@ -30,7 +30,7 @@ const ProductsAndApplications = (props) => {
 
   const ProductsAndApplicationPageDetail = [
     {
-      image: "/home/gallery-06.jpg",
+      image: "/ProductsAndApplications/DigitalPrintingBags/000001.jpeg",
       id: "digitalPrintingBags",
       name: "Digital Printing Bags",
     },
@@ -40,12 +40,12 @@ const ProductsAndApplications = (props) => {
       name: "Active Wears",
     },
     {
-      image: "/ProductsAndApplications/ActiveWears/000001.webp",
+      image: "/ProductsAndApplications/BeachWear/000001.jpeg",
       id: "beachWear",
       name: "Beach Wear",
     },
     {
-      image: "/ProductsAndApplications/ActiveWears/000001.webp",
+      image: "/ProductsAndApplications/FabricPrinting/000002.jpeg",
       id: "fabricPrinting",
       name: "Fabric Printing",
     },
