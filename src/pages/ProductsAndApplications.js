@@ -50,27 +50,27 @@ const ProductsAndApplications = (props) => {
       name: "Fabric Printing",
     },
     {
-      image: "/ProductsAndApplications/ActiveWears/000001.webp",
+      image: "/ProductsAndApplications/FashionGarments/000001.webp",
       id: "fashionGarments",
       name: "Fashion Garments",
     },
     {
-      image: "/ProductsAndApplications/ActiveWears/000001.webp",
+      image: "/ProductsAndApplications/HomeFurnishing/000001.webp",
       id: "homeFurnishing",
       name: "Home Furnishing",
     },
     {
-      image: "/ProductsAndApplications/ActiveWears/000001.webp",
+      image: "/ProductsAndApplications/RollToRoll/000001.jpeg",
       id: "rollToRollPrinting",
       name: "Roll To Roll Printing",
     },
     {
-      image: "/ProductsAndApplications/ActiveWears/000001.webp",
+      image: "/ProductsAndApplications/SuitsAndSarees/000001.webp",
       id: "sareesAndSuits",
       name: "Sarees / Suits",
     },
     {
-      image: "/ProductsAndApplications/ActiveWears/000001.webp",
+      image: "/ProductsAndApplications/Scarfs/000001.webp",
       id: "scarfs",
       name: "Scarfs",
     },

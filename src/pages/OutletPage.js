@@ -299,8 +299,8 @@ const OutletPage = () => {
         "Micro Twill",
         "Etc",
       ],
-      images: [],
-      banner: "/banner.webp",
+      images: [ "/ProductsAndApplications/FashionGarments/000001.webp"],
+      banner:  "/ProductsAndApplications/FashionGarments/000001.webp",
     },
     {
       id: "homeFurnishing",
@@ -346,8 +346,12 @@ const OutletPage = () => {
         "Micro Twill",
         "Etc",
       ],
-      images: [],
-      banner: "/banner.webp",
+      images: [
+        "/ProductsAndApplications/HomeFurnishing/000001.webp",
+        "/ProductsAndApplications/HomeFurnishing/000002.webp",
+        "/ProductsAndApplications/HomeFurnishing/000003.webp",
+      ],
+      banner: "/ProductsAndApplications/HomeFurnishing/000001.webp",
     },
     {
       id: "rollToRollPrinting",
@@ -393,8 +397,12 @@ const OutletPage = () => {
         "Micro Twill",
         "Etc",
       ],
-      images: [],
-      banner: "/banner.webp",
+      images: [
+        "/ProductsAndApplications/RollToRoll/000001.jpeg",
+        "/ProductsAndApplications/RollToRoll/000002.webp",
+        "/ProductsAndApplications/RollToRoll/000003.webp",
+      ],
+      banner: "/ProductsAndApplications/RollToRoll/000001.jpeg",
     },
     {
       id: "sareesAndSuits",
@@ -439,8 +447,11 @@ const OutletPage = () => {
         "Micro Twill",
         "Etc",
       ],
-      images: [],
-      banner: "/banner.webp",
+      images: [
+        "/ProductsAndApplications/SuitsAndSarees/000001.webp",
+        "/ProductsAndApplications/SuitsAndSarees/000002.webp",
+      ],
+      banner: "/ProductsAndApplications/SuitsAndSarees/000001.webp",
     },
     {
       id: "scarfs",
@@ -484,8 +495,11 @@ const OutletPage = () => {
         "Micro Twill",
         "Etc",
       ],
-      images: [],
-      banner: "/banner.webp",
+      images: [
+        "/ProductsAndApplications/Scarfs/000001.webp",
+        "/ProductsAndApplications/Scarfs/000002.webp",
+      ],
+      banner: "/ProductsAndApplications/Scarfs/000001.webp",
     },
   ];
 
